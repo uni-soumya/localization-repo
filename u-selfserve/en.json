@@ -1,0 +1,646 @@
+{
+  "selfServeAIAgentsView": {
+    "searchPlactholder": "Search by Agent Name",
+    "uSelfServeAiAgents": "Self-Service - AI Agents",
+    "aiAgents": "AI Agents",
+    "emptyScreenMessage": "No AI Agents found",
+    "trySearchingAgain": "Try searching again",
+    "tryCreateNewAIAgent": "Try creating a new AI Agent",
+    "aiAgentCard": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "supportedLanguages": "Supported Languages",
+      "noofIntents": "No. of intents",
+      "noofTasks": "No. of tasks",
+      "details": "Details",
+      "quickView": "Quick View"
+    }
+  },
+  "intents": {
+    "label": {
+      "description": "Description",
+      "intentName": "Intent Name",
+      "language": "Language",
+      "global": "Global"
+    },
+    "modal": {
+      "create": {
+        "title": "Add New Intent",
+        "confirmButton": "Add Intent"
+      },
+      "edit": {
+        "title": "Edit Intent"
+      },
+      "delete": {
+        "title": "Delete Intent",
+        "description": "Are you sure you want to delete this Intent?",
+        "descriptionWithName": "Are you sure you want to delete the Intent"
+      },
+      "cancel": "Cancel",
+      "yes": "Yes",
+      "ok": "Ok"
+    },
+    "list": {
+      "actionButtonLabel": "New Intent",
+      "intentsLabel": "intents",
+      "searchPlaceholder": "Search",
+      "emptyScreenMessage": "No Intents found",
+      "secondaryEmptyScreenMessage": "Try creating a new Intent",
+      "actionButtonLabelTest": "Test"
+    },
+    "errorMessages": {
+      "intentNameMinLength": "Intent name should be at least 2 characters",
+      "intentNameMaxLength": "Intent name cannot exceed 50 characters",
+      "intentNameRequired": "Intent name is required",
+      "intentNameInvalidCharacters": "Intent name cannot contain special characters, except for the underscores (_)",
+      "descriptionMaxLength": "Description cannot exceed 200 characters",
+      "intentNameAlreadyExists": "`{intentName}` already exist",
+      "createIntentSuccessMsg": "Successfully created an Intent `{intentName}`",
+      "updateIntentSuccessMsg": "Successfully updated an Intent `{intentName}`",
+      "updateIntentErrorMsg": "Failed to update an Intent `{intentName}`",
+      "deleteIntentSuccessMsg": "Successfully deleted an Intent `{intentName}`"
+    }
+  },
+  "intentDetails": {
+    "tab": {
+      "dropdown": {
+        "language": "Language"
+      },
+      "button": {
+        "train": "Train"
+      }
+    },
+    "slot": {
+      "label": {
+        "slots": "slots",
+        "slotName": "Slot Name",
+        "enityName": "Entity Name",
+        "entity": "Entity"
+      },
+      "table": {
+        "actionButtonLabel": "New Slot",
+        "searchPlaceholder": "Search Slot",
+        "emptyTableMessage": "No slot found"
+      },
+      "modal": {
+        "create": {
+          "title": "Create Slot",
+          "confirmButton": "Create Slot"
+        },
+        "edit": {
+          "title": "Edit Slot"
+        },
+        "delete": {
+          "title": "Delete Slot",
+          "description": "Are you sure you want to delete this Slot?",
+          "descriptionWithName": "Are you sure you want to delete the Slot"
+        },
+        "cancel": "Cancel",
+        "yes": "Yes",
+        "ok": "Ok"
+      },
+      "list": {
+        "searchPlaceholder": "Search",
+        "emptyScreenMessage": "No slots found",
+        "secondaryEmptyScreenMessage": "Try creating a new slot",
+        "actionButtonLabelTest": "Test"
+      },
+      "errorMessages": {
+        "slotNameMinLength": "Slot name should be at least 2 characters",
+        "slotNameMaxLength": "Slot name cannot exceed 50 characters",
+        "slotNameRequired": "Slot name is required",
+        "slotNameInvalidCharacters": "Slot name cannot contain special characters, except for the underscores (_)",
+        "createSlotSuccessMsg": "Successfully created the Slot `{slotName}`",
+        "updateSlotSuccessMsg": "Successfully updated the Slot `{slotName}`",
+        "deleteSlotSuccessMsg": "Successfully deleted the Slot `{slotName}`"
+      }
+    },
+    "trainingPhrase": {
+      "header": {
+        "addTrainingPhrasePlaceholder": "Type out your training phrase and press enter",
+        "searchPlaceholder": "Search Training Phrase"
+      },
+      "label": {
+        "phrases": "phrases"
+      },
+      "table": {
+        "searchPlaceholder": "Search Training Phrase",
+        "emptyTableMessage": "No training phrase found",
+        "updateTrainingPhrasePlaceholder": "Type out your training phrase"
+      }
+    }
+  },
+  "breadCrumb": {
+    "aiAgents": "AI Agents",
+    "intents": "Intents",
+    "entities": "Entities",
+    "channels": "Channels",
+    "channelConnectivity": "Connectivity",
+    "channelCustomization": "UI Customization",
+    "channelUVCSettings": "UVC Settings",
+    "channelTrunkSettings": "Trunk Settings",
+    "channelSipHeaders": "SIP Headers",
+    "channelAsrAndTts": "ASR/TTS",
+    "channelCxSettings": "CX Settings",
+    "channelTtsCaching": "TTS Caching",
+    "channelAgentConfig": "Agent Configuration"
+  },
+  "entity": {
+    "modal": {
+      "create": {
+        "title": "Add New Entity",
+        "confirmButton": "Add Entity"
+      },
+      "edit": {
+        "title": "Edit Entity"
+      },
+      "delete": {
+        "title": "Delete Entity",
+        "description": "Are you sure you want to delete this Entity?",
+        "descriptionWithName": "Are you sure you want to delete the Entity"
+      },
+      "cancel": "Cancel",
+      "yes": "Yes",
+      "ok": "Ok"
+    },
+    "list": {
+      "actionButtonLabel": "New Entity",
+      "entitiesLabel": "entities",
+      "searchPlaceholder": "Search",
+      "emptyScreenMessage": "No Entity found"
+    },
+    "errorMessages": {
+      "entityNameRequired": "Entity name is required",
+      "entityNameInvalidCharacters": "Entity name cannot contain special characters, except for underscores (_) and hyphens (-)",
+      "createEntitySuccessMsg": "Successfully created Entity `{entityName}`",
+      "createEntityFailedMsg": "Failed to create an Entity `{entityName}`",
+      "entityAlreadyExists": "`{entityName}` already exist",
+      "updateEntitySuccessMsg": "Successfully updated Entity `{entityName}`"
+    },
+    "entityValues": {
+      "form": {
+        "name": "Entity Value",
+        "entityName": "Entity Name",
+        "description": "Description",
+        "type": "Type",
+        "value": "Value",
+        "synonyms": "Synonyms",
+        "regex": "Regex"
+      },
+      "tab": {
+        "dropdown": {
+          "language": "Language"
+        }
+      },
+      "modal": {
+        "create": {
+          "title": "Add Entity Value",
+          "confirmButton": "Add Value"
+        },
+        "edit": {
+          "title": "Edit Entity Value"
+        },
+        "delete": {
+          "title": "Delete Entity Value",
+          "description": "Are you sure you want to delete the Entity value?",
+          "descriptionWithName": "Are you sure you want to delete the Entity value"
+        },
+        "cancel": "Cancel",
+        "yes": "Yes",
+        "ok": "Ok"
+      },
+      "list": {
+        "actionButtonLabel": "Add Value",
+        "entitiesLabel": "entity values",
+        "searchPlaceholder": "Search",
+        "emptyScreenMessage": "No entity value found",
+        "secondaryEmptyScreenMessage": "Try adding new entity values",
+        "entityValueCreateSuccessMsg": "Successfully added the Entity value `{entityValue}`",
+        "entityValueCreateFailedMsg": "Failed to create the Entity value `{entityValue}`",
+        "entityValueUpdateSuccessMsg": "Successfully updated the Entity value `{entityValue}`",
+        "entityValueUpdateFailedMsg": "Failed to update the Entity value `{entityValue}`",
+        "deleteEntityValueSuccessMsg": "Successfully deleted the Entity value `{entityValue}`",
+        "entityRefValueAlreadyExists": "`{entityValue}` already exist"
+      }
+    },
+    "form": {
+      "entityName": "Entity Name",
+      "description": "Description",
+      "type": "Type"
+    }
+  },
+  "testnlu": {
+    "actionButtonLabel": "Test",
+    "title": "Test AI Agent",
+    "result": {
+      "intentDetected": "Intent Detected",
+      "intentNotDetected": "Intent Not Detected",
+      "slotDetected": "Slot Detected",
+      "slotNotDetected": "Slot Not Detected",
+      "intentStatus": "Status",
+      "intentName": "Name",
+      "intentConfidenceLevel": "Confidence Level",
+      "intentMap": "Map to Intent",
+      "intentTopFive": "Top 5 intent"
+    },
+    "label": {
+      "slotName": "Slot Name",
+      "value": "Value",
+      "entity": "Entity"
+    },
+    "footer": {
+      "test": "Test",
+      "cancel": "Cancel"
+    },
+    "form": {
+      "userInput": "User Input",
+      "aiAgent": "AI Agent",
+      "language": "Language",
+      "mode": "Mode",
+      "intent": "Intent",
+      "slot": "Slot"
+    }
+  },
+  "channels": {
+    "successLabel": "Success!",
+    "failureLabel": "Failure!",
+    "item": {
+      "card": {
+        "details": "Details"
+      },
+      "connectivity": {
+        "title": "Connectivity",
+        "subtitle": "Please select the language and parameters of the conversation",
+        "form": {
+          "language": "Language",
+          "parameters": "Parameters",
+          "languageTooltip": "Please select the Language of the conversation.",
+          "parametersTooltip": "Please add parameters to be used in the conversation.",
+          "languagePlaceholder": "Select language",
+          "parametersPlaceholder": "variable1=value&variable2=value"
+        },
+        "card": {
+          "title": "URL Details",
+          "titleTooltip": "Click 'Generate URL' to create a chat URL based on the selected language and parameters.",
+          "button": "Generate URL",
+          "channelUrl": "Chat Channel URL",
+          "chatKey": "Chat Key",
+          "embedUrl": "Embed URL",
+          "copiedClipboard": "Successfully copied to clipboard"
+        }
+      },
+      "customization": {
+        "title": "UI Customization",
+        "updatedSuccessfully": "Channel '{channel}' customization was updated successfully.",
+        "updatedFailure": "Failed to update Channel '{channel}' customization.",
+        "form": {
+          "button": "Save"
+        }
+      },
+      "uvcSettings": {
+        "title": "UVC Settings",
+        "subtitle": "Copy the key and configure it in the routing plan - for a specific DID number - in the source telephony system.",
+        "generateKey": "Generate UVC Key",
+        "generateKeyLabel": "Generate Key",
+        "copyKey": "Copy UVC Key",
+        "copySuccess": "Copied successfully",
+        "encryptKey": "UVC Key"
+      },
+      "trunkSettings": {
+        "title": "Trunk Settings",
+        "subtitle": "Configure the trunk settings for the voice channel.",
+        "didNumberLabel": "DID Number",
+        "didNumberPlaceholder": "Enter DID Number",
+        "createSuccessMessage": "Trunk settings configuration created successfully",
+        "createFailureMessage": "Failed to create trunk settings configuration",
+        "updateSuccessMessage": "Trunk settings configuration updated successfully",
+        "updateFailureMessage": "Failed to update trunk settings configuration",
+        "trunkSettingsDoNotExistMessage": "Trunk settings configuration does not exist. Please create a new configuration",
+        "saveBtnLabel": "Save",
+        "cancelBtnLabel": "Cancel",
+        "trunkNumberHeader": "Trunk Numbers",
+        "allowedSipHeader": "Allowed SIP Source Addresses",
+        "allowedSipSubheader": "Configure CIDR blocks of the source telephony system from which SIP requests will be received",
+        "cidrBlockLabel": "CIDR Block",
+        "cidrBlockPlaceholder": "Enter CIDR Block",
+        "cidrBlockInfoMsg": "For Twilio: Configure these specific CIDRs: 168.86.128.0/18, 54.172.60.0/30, 54.244.51.0/30. For other providers: Refer to your provider's documentation for required signaling and media IP ranges.",
+        "addBtnLabel": "Add",
+        "invalidCidrBlockMsg" : "Please enter a valid CIDR block",
+        "duplicateCidrBlockMsg" : "This CIDR block is already added"
+      },
+      "sipHeaders": {
+        "title": "SIP Headers",
+        "sessionParams":"Session Parameters",
+        "DNIS": "DNIS", 
+        "userId": "UserID",
+        "sourceTelephonyId": "SourceTelephonyID",
+        "defaultSIPHeader": "Default SIP Header",
+        "defaultSIPHeaderSubTitle":"Values sent in SIP header from source telephony system will be sent as session meta data",
+        "fetchSIPHeaderFailureMessage": "Failed to fetch SIP Header details",
+        "saveSIPConfigurationSuccessMessage": "SIP Header Variable details configuration saved successfully",
+        "duplicateSIPConfigurationWarningMessage": "Please enter a unique SIP Header parameter and a variable",
+        "EmptyConfigurationWarningMessage": "Please enter the values for the configurable SIP header and session variables to be received in SIP transfer or delete a row",
+        "validateMessageRequiredFields": "Please fill all the required fields",
+        "saveSIPConfigurationErrorMessage": "Failed to save the SIP header details configuration",
+        "changeSIPVariableWarningMessage": "Changing the '%%' as variable may affect flows in run time.\n\nAre you sure you want to change it?",
+        "sourceTelephonyIdParamPlaceholder": "SIP Header parameter for unique call ID in source telephony",
+        "userIdParamPlaceholder": "SIP Header parameter for Unique phone number of caller",
+        "DNISParamPlaceholder": "SIP Header parameter for DNIS",
+        "additionalSIPParamConfigPlaceholder": "Please enter SIP header name",
+        "additionalSessionStateVariableLabel": "Please enter Session State variable name",
+        "additionalSIPParamConfigSubTitle": "Values sent in SIP Header are stored as session data",
+        "additionalSipHeaderTtitle": "SIP headers to map into Session State",
+        "additionalSipHeaderName": "Configurable SIP Header Name",
+        "additionalSessionStateName": "Session State Variable"
+      },
+      "asrAndTTS": {
+        "title": "ASR/TTS",
+        "asrHeader": "ASR Settings",
+        "asrSubheader": "Configure your Speech to Text ASR engine here",
+        "providerLabel": "Provider",
+        "providerPlaceholder": "Select Provider",
+        "LicensingLabel": "Licensing",
+        "asrEndPointLabel": "ASR End point",
+        "asrMinSilenceDurationLabel" : "Minimum Silence Duration",
+        "asrMinSilenceDurationPlaceholder" : "Seconds",
+        "asrMinSilenceDurationInfoMsg" : "Duration of silence in seconds to consider end of user input",
+        "asrEndpointPlaceholder": "Please enter the URL of the ASR",
+        "asrEndpointInfoMsg": "Please contact support to get the URL of the ASR end point of the specific language",
+        "ttsEndPointLabel": "TTS End point",
+        "ttsEndpointPlaceholder": "Please enter the URL of the TTS",
+        "ttsEndpointInfoMsg": "Please contact support to get the URL of the Microsoft on-prem TTS end point for the specific language",
+        "fetchOnPremTTS": "Fetch",
+        "asrConfidenceLabel": "ASR Confidence",
+        "asrConfidenceInfoMsg": "Select a value of 0 to 1. Recommended value is 1",
+        "providerDeepgram": "Deepgram",
+        "providerUniphore": "Uniphore",
+        "ttsHeader": "TTS Settings",
+        "ttsSubheader": "Select a Text to Speech Engine of your choice",
+        "dialectLabel": "Select Dialect",
+        "engineLabel": "Engine",
+        "engineTypeStandard": "Standard",
+        "engineTypeNeural": "Neural",
+        "voiceTypeLabel": "Voice",
+        "voiceStyleLabel": "Voice Expressiveness",
+        "speakingSpeed": "Speaking speed",
+        "speakingPitch": "Pitch",
+        "testVoiceSample": "Test Voice Sample",
+        "testVoiceSampleInfoMsg": "Hear how a voice sounds by typing out a sample BOT response",
+        "testVoiceSamplePlaceholder": "Type out sample text",
+        "testBtnLabel": "Test",
+        "dialectInfoMsg": "Subdialects is available only for specific languages - Arabic, English, Spanish and French",
+        "refreshMsg": "Refresh to see the most updated voices available from the TTS provider",
+        "engineInfoMsg": "Standard produces Natural Sounding speech\n.Neural produces the most natural and human like speech possible.",
+        "asrLicenseInfoMsg": "Licenses applicable to all languages. First license added is considered for ASR Testing ",
+        "ttsLicenseInfoMsg": "Licenses applicable to all languages. First license added is considered for TTS Testing ",
+        "saveLicenseLabel": "Save",
+        "cancelLicenseLabel": "Cancel",
+        "licensingKey": "Licensing Key",
+        "secretKey": "Secret Key",
+        "licensingRegion": "Licensing Region",
+        "minConnections": "Min Connections",
+        "maxConnections": "Max Connections",
+        "addLicense": "Add license",
+        "deleteLicense": "Delete license",
+        "ttsLicense": "TTS Licenses",
+        "asrLicense": "ASR Licenses",
+        "licenseKeyInfoMsg": "You can access your licensing key as needed from your provided account.",
+        "secretKeyInfoMsg": "You can access your secret key as needed from your provided account.",
+        "licenseKeyPlaceholder": "Ex : YRYF76578698GIJI",
+        "secretKeyPlaceholder": "Ex : r1J93KJGtwV7uTGRgdccNnJ8c14dCpck",
+        "regionPlaceholder": "Ex : Us-East",
+        "minConnectionPlaceholder": "20",
+        "maxConnectionPlaceholder": "50",
+        "ASRLicenseKeyRequired": "Please add License Key to configure ASR",
+        "saveASRErrorMsg": "Failed to save ASR configuration",
+        "testVoiceSampleWarnMsg": "Please add atleast one License Key to test an audio sample",
+        "testVoiceSampleErrorMsg": "Failed to test a voice sample",
+        "fetchTTSLicenseErrMsg": "Failed to fetch license details",
+        "validASRendpointUrlMsg": "Please enter a valid ASR endpoint URL",
+        "validTTSendpointUrlMsg": "Please enter a valid TTS endpoint URL",
+        "validASRMinSilenceDurationMsg": "Please enter a valid ASR minimum silence duration between 0.1 and 10 seconds",
+        "validTTSVoiceMessageMsg": "Please select a voice to configure TTS Settings",
+        "fetchTTSConfigurationErrorMessage": "Failed to load TTS configuration details",
+        "fetchASRConfigurationErrorMessage": "Failed to load ASR configuration details",
+        "saveTTSConfigurationSuccessMsg": "Configuration saved successfully",
+        "saveTTSConfigurationErrorMsg": "Failed to save TTS configuration",
+        "saveLicenseErrorMessage": "Failed to save License details",
+        "saveLicenseSuccessMessage": "License details saved successfully",
+        "mandatoryFieldsErrorMessage": "All mandatory fields are required",
+        "additionalTTSLicenseKeyRequiredMessage": "Please enter all the required fields for the License or delete the License",
+        "TTSLicenseKeyRequired": "Please add atleast one License Key to configure TTS",
+        "elevenLabsLicenseKeyRequired": "Please add License Key to configure Eleven Labs",
+        "emptyVoiceListMessage": "For the chosen Provider and Engine combination, voice is not available. Please select a different combination",
+        "emptyVoiceListMessageForElevenLabs": "For the chosen Provider and Language combination, voice is not available. Please select a different combination",
+        "ttsrequiredfields":"Please fill all the required TTS fields",
+        "voiceStyleInfoMsg":"Emotional tone of the speech. Defaults to neutral.",
+        "speakingSpeedInfoMsg":"How fast or slow the response should be with 1.0 as default",
+        "similarity": "Similarity",
+        "similarityInfoMsg":"Closeness to selected voice.",
+        "stability": "Stability",
+        "stabilityInfoMsg": "Low values will give higher emotional range with higher values showing lower emotional range",
+        "speakerBoost": "Speaker Boost",
+        "speakerBoostInfoMsg": "Enhance similarity to the selected voice and may add latency"
+      },
+      "cxSettings": {
+        "title": "CX Settings",
+        "noInputTimeOutLabel": "No input time out",
+        "noInputTimeOutRetryLabel": "No input time out for `{number}` retry",
+        "noInputTimeoutInfoMessage": "Bot will wait for user's input for x seconds before speaking the no input prompt",
+        "noInputTimeoutFirstRetryInfoMessage": "Bot will speak this no input prompt after first x seconds if user does not provide an input.",
+        "noInputTimeoutGrtOneRetryInfoMessage": "BOT will speak this no input prompt after x seconds if user does not provide an input",
+        "seconds": "seconds",
+        "callEndsLabel": "Call termination message after all retries",
+        "callEndsInfoMsg": "After all retry attempts, the BOT will play this message and terminate the call.",
+        "intentToTriggerLabel": "Intent to be triggered",
+        "intentToTriggerLabelInfoMsg": "Select Intent which will trigger the flow that has the bot responses to be played after the failure of all no input retries.",
+        "inputTimeoutLabel": "Input time out",
+        "inputTimeoutLabelInfoMsg": "User can speak for x seconds without a speech pause before triggering a no input.",
+        "dtmfTimeoutLabel": "DTMF time out",
+        "dtmfInfoMsg": "Users can wait x seconds between each digit pressed by user before the BOT processes all the digits",
+        "timebtwnkeypresslabel": "Time for key press",
+        "dtmfSubmitDtmfOnPoundlabel": "Submit DTMF on '#'",
+        "timebtwnkeypresslabelinfoMsg": "BOT will wait for x seconds between two key presses of DTMF ",
+        "dtmfSubmitDtmfOnPoundlabelinfoMsg": "Submit collected DTMF on pressing #",
+        "bargeInInfoMsg": "Allows user to interrupt BOT response",
+        "bargeInDTMFLabel": "DTMF",
+        "bargeInVoiceLabel": "Voice",
+        "bargeInVoiceInfoMsg": "When Barge-In is Disabled user will not be able interrupt BOT response. When Barge-In is Enabled user input during a BOT response will be processed.",
+        "bargeInDTMFInfoMsg": "Enable to let users interrupt BOT response with a DTMF Input.",
+        "keyStrokeMsg": "Keystroke sound after user speaks.",
+        "keyStrokeInfoMsg": "Play a keystroke file to indicate that the response is being processed",
+        "holdMusicMsg": "Hold Music",
+        "holdMusicMsgInfo": "The uploaded audio file will be played as hold music till the BOT response is available at which point the hold music stops and the BOT response is played out. The format of the audio file is 8000 hz, 16 bit, mono windows pcm(wav file)",
+        "fillerMsg": "Filler Message",
+        "message": "Message `{number}`",
+        "addFillerMessage": "Add filler message",
+        "fillerMessagePlaceholder": "Enter a filler message",
+        "fillerMsgTime": "Time to first Filler message",
+        "fillerInfoMsg": "Filler messages keep users engaged while they wait, You can set up to 20 unique messages, which will be played randomly.",
+        "unexpectedErrMsg": "Bot plays this message and terminates the call, when a response cannot be generated in the middle of the call.",
+        "AudioBfrCallEnds": "Audio to play before call termination",
+        "unexpectedError": "Unexpected Error",
+        "errMsgPlaceholder": "Message to play before terminating call in case of error",
+        "msgsTimeInterval": "Time Interval for messages",
+        "timeIntervalInfoMsg": "When hold music is not enabled a filler message will be played in a random time between these intervals",
+        "lowerLimit": "Lower Limit",
+        "upperLimit": "Upper Limit",
+        "saveCXSettingsSuccessMessage": "Customer Experience settings configuration saved successfully ",
+        "saveCXSettingsErrorMessage": "Failed to configure the Customer Experience settings",
+        "fetchCXSettingsErrorMessage": "Failed to fetch CX Settings",
+        "noInputTimeOutRequiredFieldsErrorMessage": "Please fill all the required fields for No Input Time Out",
+        "fetchIntentErrorMessage": "Failed to fetch Intents",
+        "holdMusicFileUploadErrorMessage": "Failed to upload Hold Music file. Please try again",
+        "holdMusicFileUploadSuccessMessage": "Hold Music file uploaded successfully",
+        "holdMusicRequiredErrorMessage": "Please upload a Hold Music file or disable Hold Music",
+        "keyStrokeRequiredErrorMessage": "Please upload a Keystroke file or disable Keystroke",
+        "keyStrokeFileUploadSuccessMessage": "Keystroke file uploaded successfully",
+        "keyStrokeFileUploadErrorMessage": "Failed to upload Keystroke file. Please try again",
+        "noInputTimeOutEmptyErrorMessage": "Please enter a value for no input prompt or delete a row",
+        "callTerminationMsgRequiredErrorMessage": "Please enter a call termination message",
+        "fillerMessageEmptyErrorMessage": "Please enter a value for filler message or delete a row",
+        "timetoFillerMessage": "Time to first Filler message",
+        "timeToFillerMessageInfoMsg": "Time to play first filler message",
+        "milliseconds": "milliseconds",
+        "fillerMessageAtLeastOneRequiredErrorMessage": "Please add alteast one Filler message"
+      },
+      "ttsCaching": {
+        "title": "TTS Caching",
+        "searchPlaceholder": "Search Phrase",
+        "phraseLabel": "Phrases",
+        "phraseHeader": "Add AI Agent responses to be cached",
+        "searchPhrases": "Search Phrases",
+        "emptyStateTitle": "No phrases found",
+        "emptyStateMessage": "Try adding new phrases",
+        "saveTTSUtterancesSuccessMessage": "Phrase saved successfully",
+        "saveTTSUtterancesErrorMessage": "Failed to save phrases",
+        "fetchTTSUtterancesErrorMessage": "Failed to fetch Phrases",
+        "deletePhraseSuccessMessage": "Phrase deleted successfully",
+        "emptyPhraseErrorMessage": "Empty phrases cannot be saved. Please add a relevant BOT response",
+        "duplicatePhraseErrorMessage": "The BOT response you are trying to add is already available in cache"
+      },
+      "agentConfig": {
+        "title": "Agent Configuration",
+        "form": {
+          "agentNameLabel": "Agent Name",
+          "agentNamePlaceholder": "Enter Agent Name",
+          "agentVersionLabel": "Agent Version",
+          "agentVersionPlaceholder": "Enter Agent Version",
+          "saveBtnLabel": "Save",
+          "cancelBtnLabel": "Cancel"
+        },
+        "createSuccessMessage": "Agent configuration created successfully",
+        "createFailureMessage": "Failed to create agent configuration",
+        "updateSuccessMessage": "Agent configuration updated successfully",
+        "updateFailureMessage": "Failed to update agent configuration",
+        "agentConfigDoNotExistMessage": "Agent configuration does not exist. Please create a new configuration"
+      }
+
+    },
+    "form": {
+      "name": {
+        "label": "Channel Name",
+        "requiredMessage": "Please add channel name"
+      },
+      "description": {
+        "label": "Description",
+        "requiredMessage": "Please add description"
+      },
+      "channelType": {
+        "label": "Channel Type",
+        "requiredMessage": "Please select channel type",
+        "placeholder": "Select channel type"
+      }
+    },
+    "modal": {
+      "create": {
+        "triggerButton": "New Channel",
+        "title": "Add Channel",
+        "confirmButton": "Add Channel",
+        "failureNotification": "Failed to create Channel '{channel}'.",
+        "successNotification": "Channel '{channel}' was created successfully."
+      },
+      "defaultCancelButton": "Cancel"
+    },
+    "types": {
+      "chat": "Chat"
+    }
+  },
+  "trainnlu": {
+    "button": {
+      "train": "Train"
+    },
+    "status": {
+      "nottrained": "Training Not Started",
+      "trained": "Training Completed",
+      "trainingInprogress": "Training In Progress",
+      "scheduled": "Scheduled",
+      "failedStatus": "Training Failed",
+      "message.label": "Status",
+      "updatedtime.label": "Updated Time",
+      "failed.message.contact.support": "Try again / Contact support"
+    },
+    "message": {
+      "lastTrained": "Last Trained - ",
+      "failed": "Retry or Contact support",
+      "trainingFailed": "Training failed for the AI-Agent '%%'",
+      "startTraining": "Started training "
+    }
+  },
+  "versionHistory": {
+    "commitActionButtonLabel": "Commit",
+    "versionHistoryTitle": "Version History",
+    "emptyScreenMessage": "No version history found",
+    "commit": {
+      "modal": {
+        "create": {
+          "title": "Commit Version",
+          "versionHistorySubtitle": "Once a version is committed no additional changes can be made to that version",
+          "confirmButton": "Commit"
+        },
+        "delete": {
+          "title": "Delete Version",
+          "description": "Are you sure you want to delete this version?",
+          "descriptionWithName": "Are you sure you want to delete the version"
+        }
+      }
+    },
+    "restore": {
+      "modal": {
+        "title": "Restore To Test",
+        "confirmButton": "Restore To Test",
+        "description": "Are you sure you want to restore this version?",
+        "descriptionWithName": "Are you sure you want to restore the version",
+        "descriptionWithNameReconfirm": "The current Test version has uncommitted changes that will be lost after restore. Do you still want to proceed?"
+      }
+    },
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "ok": "Ok",
+    "form": {
+      "name": "Name",
+      "description": "Description"
+    },
+    "tableHeader": {
+      "versionName": "Version Name",
+      "lastActionDate": "Last Action Date",
+      "description": "Description"
+    },
+    "errorMessages": {
+      "commitVersionNoChangesError": "A version cannot be created as there are no changes to commit",
+      "commitSuccessMsg": "Successfully committed the version `{versionName}`",
+      "commitFailedMsg": "Failed to commit the version `{versionName}`",
+      "versionReduantErrorMsg": "The selected version cannot be restored to Test as it is the same as the current Test version",
+      "restoreSuccessMsg": "`{versionName}` is currently being Restored to Test",
+      "commitVersionErrorMsg": "A version cannot be created. Please try again at a later time",
+      "restoreErrorMsg": "The selected version `{versionName}` cannot be restored as there is a restoring in progress. Please try again at a later time",
+      "deleteVersionErrorMsg": "The version cannot be removed as there is pending action. Please try again at a later time"
+    }
+  },
+  "errorMessages": {
+    "internalServerError": "Internal server error - Contact Support",
+    "nameAlreadyExists": "`{name}` already exist",
+    "invalidDescriptionMsg": "In-Valid Special Characters are not allowed",
+    "defaultServerError": "Apologies. We are facing difficulties in accessing your U-Self Serve account at the moment. Please contact Uniphore customer support for further action."
+  }
+}

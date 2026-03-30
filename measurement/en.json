@@ -1,0 +1,652 @@
+{
+  "disposition": {
+    "header": {
+      "title": "Disposition",
+      "createButton": "New Configuration",
+      "searchPlaceholder": "Search",
+      "configs": "Config(s)",
+      "config": "Configuration",
+      "homeIcon": "Home",
+      "uploadInputTemplateTitle": "Upload Input Template",
+      "uploadTestTemplateTitle": "Upload Test Template",
+      "uploadSourceFileTitle": "Upload Source File",
+      "templateUploadSuccessMsg": "Successfully uploaded `{templateType}` template - `{templateName}`",
+      "templateUploadFailureMsg": "Failed to upload `{templateType}` template - `{templateName}`",
+      "templateDownloadFailureMsg": "Failed to download `{templateType}` template",
+      "upload": "Upload",
+      "emptyList": {
+        "primaryDesc": "No Dispositions Found",
+        "superAdminSecondaryDesc": "Click on <strong>\"+ New Configuration\"</strong> to start adding new configuration,<br/>and to use more icon to <strong>\"Upload Template\"</strong>.",
+        "secondaryDesc": "Click on <strong>\"+ New Configuration\"</strong> to start adding new configuration."
+      }
+    },
+    "card": {
+      "deleteTitle": "Delete",
+      "globalTitle": "Global",
+      "languageTitle": "Language",
+      "openButtonTitle": "Open",
+      "assignButtonTitle": "Assign",
+      "underTrainingStatus": "Under Training",
+      "trainedStatus": "Trained",
+      "trainingFailedstatus": "Training Failed",
+      "yesLabel": "Yes",
+      "noLabel": "No",
+      "deleteDispSuccessMsg": "Successfully deleted a disposition - `{dispositionName} - {version}`",
+      "dispConfigInUseMsg": "Cannot delete disposition - `{dispositionName} - {version}`. Already in use.",
+      "deleteDispFailureMsg": "Failed to delete disposition - `{dispositionName} - {version}`",
+      "clearMapping": "Clear Mapping",
+      "clearMappingSuccessMsg": "All organization mappings have been cleared successfully.",
+      "clearMappingFailureMsg": "Failed to clear organization mappings. Please try again.",
+      "status": {
+        "trained": "Trained",
+        "completed": "Completed",
+        "under_training": "Under Training",
+        "in_progress": "In Progress"
+      }
+    },
+    "deleteDialog": {
+      "title": "Delete Configuration",
+      "description": "Are you sure you want to delete this configuration?",
+      "confirmButton": "Yes",
+      "cancelButton": "No"
+    },
+    "createModal": {
+      "title": "Create New Disposition",
+      "editTitle": "Edit Disposition",
+      "nameLabel": "Config. Name",
+      "configNameTooltip": "Alphanumeric characters & '_' only. No spaces allowed.",
+      "namePlaceholder": "Please enter name",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Please add description",
+      "partnerLabel": "Partner",
+      "partnerPlaceholder": "Select Partner",
+      "noPartnerAvailablePlaceholder": "No partners available",
+      "accountLabel": "Account",
+      "noAccountAvailablePlaceholder": "No accounts available",
+      "accountPlaceholder": "Select Account",
+      "inputLanguageLabel": "Input Call Language",
+      "outputLanguageLabel": "Output Disposition Language",
+      "englishDefaultLabel": "English (Default)",
+      "globalLabel": "Global",
+      "createButton": "Add",
+      "updateButton": "Update",
+      "cancelButton": "Cancel",
+      "versionLabel": "Version",
+      "uploadConfigFileLabel": "Upload Config. File",
+      "downloadInputTemplateFileLabel": "Download Config Template",
+      "dragAndDropToUploadLabel": "Click or drag file to this area to upload",
+      "dragAndDropToUploadHint": "Support for a single upload.",
+      "fileErrorMessages": {
+        "typeError": "Invalid file type. Please upload a XLS/XLSX file.",
+        "empty": "The file is empty or contains no data.",
+        "headerCount": "The file must contain exactly {headerCount} headers, namely: {headerNames}.",
+        "invalidHeaders": "Invalid headers found: {invalidHeaderNames}",
+        "invalidFileType": "Invalid file type. Please upload a XLS/XLSX file.",
+        "duplicateTreeLabel": "Duplicate {level} Disposition found {label}.",
+        "invalidaData": "Inconsistent information in the configuration file.\nPlease correct and upload again."
+      },
+      "nameError": {
+        "required": "Configuration name is required.",
+        "length": "Configuration name must be between 3 and 50 characters long.",
+        "invalid": "Configuration name contains invalid characters.",
+        "duplicate": "Configuration name already exists."
+      }
+    },
+    "assignModal": {
+      "assignTo": "Assign to",
+      "orgTitle": "Org",
+      "assigned": "Assigned",
+      "notAssigned": "Not Assigned",
+      "confirmAssignment": "Confirm Assignment",
+      "organization": "Organisation",
+      "expId": "Experience(s)",
+      "n/a": "N/A",
+      "assignDisposition": "Assign Disposition",
+      "selectOrgs": "Select organisation(s)",
+      "orgRequiredError": "Organisation is a required field.",
+      "mappingSuccess": "Dispositions have been successfully mapped to the selected organization(s).",
+      "sameOrgMappedError": "Cannot create mapping: One or more Organisations are already mapped to another Disposition."
+    },
+    "deleteMapping": {
+      "clearMapping": "Clear Mapping",
+      "clearMappingTitle": "Unassign Organisation(s)?",
+      "clearMappingMessage": "This will remove assigned Organisation(s) for the disposition: {disposition}.\nDo you want to proceed",
+      "clearBtnLabel": "Unassign"
+    },
+    "selectVersionModal": {
+      "title": "Please select version",
+      "deleteTitle": "Delete Config",
+      "versionLabel": "Select Version",
+      "versionPlaceholder": "Select Version",
+      "openButtonLabel": "Open",
+      "deleteButtonLabel": "Delete",
+      "cancelButton": "Cancel",
+      "deleteMessage": "Are you sure you want to delete ",
+      "versionError": {
+        "required": "Version is required.",
+        "duplicate": "Version already exists."
+      }
+    },
+    "dispositionDetails": {
+      "editButtonLabel": "Edit",
+      "updateButtonLabel": "Update",
+      "editDisableTooltip": "Editing of Disposition details is currently disabled. Please use create a new configuration.",
+      "cancelButtonLabel": "Cancel",
+      "saveAndTrainButtonLabel": "Save & Train",
+      "downloadConfigButtonLabel": "Download Config",
+      "createDispSuccessMsg": "Successfully created disposition - `{dispositionName}` - `{version}`",
+      "createDispFailureMsg": "Failed to create disposition - `{dispositionName}`",
+      "updateDispSuccessMsg": "Successfully updated disposition - `{dispositionName}` - `{version}`",
+      "updateDispFailedMsg": "Failed updated disposition - `{dispositionName}` - `{version}`",
+      "tree": {
+        "searchPlaceholder": "Search"
+      },
+      "nodeDetails": {
+        "title": "Disposition Details",
+        "nameLabel": "Name",
+        "levelLabel": "Level",
+        "descriptionLabel": "Description"
+      },
+      "configDetails": {
+        "title": "Configuration Details",
+        "nameLabel": "Name",
+        "nameLabelPlaceholder": "Add Configuration Name",
+        "descriptionLabel": "Description",
+        "descriptionLabelPlaceholder": "Please add description",
+        "revertUpdate": "Revert Update",
+        "partnerLabel": "Partner",
+        "accountLabel": "Account",
+        "inputLanguageLabel": "Input Call Language",
+        "outputLanguageLabel": "Output Disposition Language",
+        "versionLabel": "Version",
+        "scopeLabel": "Scope",
+        "sourceFileLabel": "Source File",
+        "globalLabel": "Global",
+        "localLabel": "Local",
+        "updateButtonLabel": "Update"
+      },
+      "tabs": {
+        "configureHierarchy": "Configure Hierarchy",
+        "testToValidate": "Test to Validate",
+        "standardDispositions": "Standard Dispositions",
+        "myDispositions": "My Dispositions",
+        "assignments": "Assignments"
+      }
+    },
+    "testToValidate": {
+      "tableColumnDef": {
+        "testLabel": "Test Label",
+        "noOfCalls": "No. of Calls",
+        "dateTime": "Date & Time",
+        "processingTime": "Processing Time",
+        "status": "Status",
+        "norowDataMsg": "No Test Result Found",
+        "norowDataDesc": "Click on `Run Test` to upload an XLS file for testing",
+        "completed": "Completed",
+        "processing": "Under Processing",
+        "failed": "Failed"
+      },
+      "uploadFileModal": {
+        "title": "Run Test",
+        "footerLabel": "Run Test",
+        "cancelButtonLabel": "Cancel"
+      },
+      "notification": {
+        "downloadTestResultsErrorMsg": "Failed to download test results - `{label}`",
+        "createTestDispositionSuccessMsg": "Successfully saved the test disposition template - `{label}` ",
+        "createTestDispositionErrorMsg": "Failed to create the test disposition - `{label}` ",
+        "validExcelFileErrorMsg": "Please upload a valid excel file",
+        "empty": "The file is empty or contains no data.",
+        "headerCount": "The file must contain exactly {headerCount} headers, namely: {headerNames}.",
+        "invalidHeaders": "Invalid headers found: {invalidHeaderNames}",
+        "invalidFileType": "Invalid file type. Please upload a XLS/XLSX file.",
+        "missingRequiredColumnsErrorMsg": "Invalid file: please ensure all rows have both SI.No and Transcript, and there are no empty rows in between.",
+        "exceedsTranscriptRecordsErrorMsg": "The uploaded file exceeds the maximum limit of {maxRecords} transcript records.",
+        "uploadedFileSizExceeded": "The uploaded file size exceeds the maximum limit of {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "Transcript turn is not valid. Each line should start with 'Speaker': 'followed by the content'",
+        "multiplEscelSheetsErrorMsg": "Multiple sheets found in the Excel file. Please upload a file with a single sheet."
+      }
+    },
+    "validation": {
+      "emptyRow": "Empty row detected",
+      "whitespaceLabel": "Whitespace-only label found at {level}",
+      "specialCharLabel": "Label '{label}' at {level} contains special characters or emojis",
+      "specialCharDefinition": "Definition '{definition}' contains special characters or emojis",
+      "duplicateLabel": "Duplicate label '{label}' found at {level}",
+      "duplicatePath": "Duplicate label found - `{path}`",
+      "duplicateNameError": "Duplicate Name found - `{value}`",
+      "duplicateDefinition": "Label '{label}' has conflicting definitions",
+      "missingParent": "Missing parent disposition for {level}",
+      "emptyDispositionDefinition": "Empty disposition definition found."
+    }
+  },
+  "summary": {
+    "builderView": {
+      "summaryTemplatesTitle": "Summary Builder",
+      "createButton": "New Summary Template",
+      "questionsManagerTitle": "Questions Manager",
+      "summaryTemplatesViewOption": "Summary Templates",
+      "questionsManagerViewOption": "Questions Manager",
+      "tabs": {
+        "buildSummary": "Build Summary",
+        "testToValidate": "Test to Validate"
+      },
+      "templates": {
+        "uniphoreStandardTemplates": "Uniphore Standard Templates",
+        "userDefinedTemplates": "User Defined Templates"
+      },
+      "presentationFormat": {
+        "sectionBullets": "Sectional - Bullets",
+        "sectionNumeric": "Sectional - Numeric",
+        "paragraph": "Paragraph",
+        "sectionParagraph": "Sectional - Paragraph"
+      }
+    },
+    "testTemplateView": {
+      "footer": {
+        "downloadTemplateButtonLabel": "Download Test Template",
+        "canceButtonLabel": "Cancel"
+      },
+      "tableColumnDef": {
+        "norowDataMsg": "No Result Found",
+        "norowDataDesc": "Drop .XLS file with transcripts or download template to fill and upload",
+        "createTestSummarySuccessMsg": "Successfully saved the test summary template - `{label}` ",
+        "createTestSummaryErrorMsg": "Failed to create the test summary - `{label}` ",
+        "retryTestSuccessMsg": "Successfully retried the test summary - `{label}` ",
+        "retryTestErrorMsg": "Failed to retry the test summary - `{label}` "
+      },
+      "excelValidation": {
+        "validExcelFileErrorMsg": "Please upload a valid excel file",
+        "uploadCorrectFileErrorMsg": "Please upload an Excel file",
+        "headerCount": "The file must contain exactly {headerCount} headers, namely: {headerNames}",
+        "empty": "The file is empty or contains no data.",
+        "invalidHeaders": "Invalid headers found: {invalidHeaderNames}",
+        "invalidFileType": "Invalid file type. Please upload a XLS/XLSX file.",
+        "missingRequiredColumnsErrorMsg": "Invalid file: please ensure all rows have both SI.No and Transcript, and there are no empty rows in between.",
+        "exceedsTranscriptRecordsErrorMsg": "The uploaded file exceeds the maximum limit of {maxRecords} transcript records.",
+        "uploadedFileSizExceeded": "The uploaded file size exceeds the maximum limit of {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "Transcript turn is not valid. Each line should start with 'Speaker': 'followed by the content'",
+        "multiplEscelSheetsErrorMsg": "Multiple sheets found in the Excel file. Please upload a file with a single sheet."
+      }
+    },
+    "questionsManager": {
+      "searchPlaceholder": "Search",
+      "questionLabel": "Question Label",
+      "questionPrompt": "Prompt",
+      "questionText": "Question Text",
+      "sampleOneShotAnswer": "Sample One - Shot Answer",
+      "bulkActionsLabel": "Bulk Actions",
+      "category": "Category",
+      "questions": "Questions",
+      "selectedQuestions": "Selected",
+      "categoryOptions": {
+        "all": "All",
+        "standard": "Standard",
+        "custom": "Custom"
+      },
+      "actions": {
+        "deleteQuestion": "Delete Question",
+        "setAsStandard": "Set as Standard",
+        "convertToCustom": "Convert to Custom"
+      },
+      "bulkActions": {
+        "deleteBulkQuestions": "Delete Questions",
+        "deleteBulkMessage": "Some of the selected questions are linked with templates and cannot \nbe deleted. \nYou can proceed with the ones that are safe to delete. You may also \ndeselect any question you don’t want to delete.",
+        "deleteBulkTitle": "Delete Questions",
+        "deleteBulkConfirm": "Delete Questions"
+      },
+      "questionEdit": {
+        "title": " Question Details",
+        "questionTextTooltip": "Must be unique, under 20 characters, and without special characters.",
+        "promptTooltip": "Limited to 500 characters and cannot contain scripting tags.",
+        "sampleOneShotAnswerTooltip": "Limited to 500 characters and must be text only.",
+        "questionLabelError": "Label can not be empty, must be maximum 15 chars.",
+        "questionTextError": "Text can not be empty, must be maximum 20 chars.",
+        "promptError": "Prompt can not be empty, must be maximum 500 chars.",
+        "sampleOneShotAnswerError": "Sample one-shot answer can not be empty, must be maximum 500 chars.",
+        "templatesListTitle": "Templates Used",
+        "noTemplatesFound": "No templates used for this question",
+        "actionRequiredTextButton": "View Associated Templates",
+        "actionRequiredTitle": "Action Restricted",
+        "deleteQuestionNotification": {
+          "title": "Delete question",
+          "forbiddenMessage": "This question cannot be deleted as it is currently used in one or more \ntemplates.  It can only be deleted after all associations are removed.",
+          "allowedMessage": "This question is not used in any templates and will be permanently \ndeleted. \nThis action cannot be undone. Are you sure you want to continue?",
+          "confirmTextButton": "Delete Question"
+        },
+        "demoteQuestionNotification": {
+          "title": "Convert to Custom",
+          "forbiddenMessage": "This question cannot be demoted as it is currently used in one or more \ntemplates.  It can only be demoted after all associations are removed.",
+          "allowedMessage": "This question will be converted to a custom question. \nThis action cannot be undone. Are you sure you want to continue?",
+          "confirmTextButton": "Convert to Custom"
+        },
+        "promoteQuestionNotification": {
+          "title": "Convert to Standard",
+          "allowedMessage": "This question will be promoted to a standard question and will be available \nfor all users across all accounts. Are you sure you want to continue?",
+          "confirmTextButton": "Convert to Standard"
+        },
+        "confirmSavingQuestion": "This question is currently used in one or more templates.\n\nSaving this question will update it across all associated templates.\n\nDo you want to save the changes?",
+        "confirmEditingQuestion": "This question is currently used in one or more templates.\n\nDo you still want to edit it?",
+        "confirmSaveButtonLabel": "Confirm Save",
+        "confirmEditTitle": "Confirm Edit",
+        "continueLabel": "Continue",
+        "cancelLabel": "Cancel",
+        "processingTimeLabel": "Processing Time",
+        "outputLabel": "Output",
+        "processingData": "Processing data...",
+        "processing": "Processing"
+      }
+    },
+    "card": {
+      "searchPlaceholder": "Search",
+      "searchCount": "Summaries",
+      "globalTitle": "Global",
+      "yesLabel": "Yes",
+      "noLabel": "No",
+      "doneLabel": "Done",
+      "inputLanguageTitle": "Input Language",
+      "ouputLanguageTitle": "Output Language",
+      "openButtonTitle": "Open",
+      "deleteTitle": "Delete",
+      "cloneTitle": "Clone",
+      "openButtonLabel": "Open",
+      "model": {
+        "open": {
+          "openHeader": "Please select version",
+          "versionLabel": "Version Notes",
+          "versionLabelPlaceholder": "Please add notes",
+          "emptyVersionNotesPlaceholder": "No version notes available"
+        },
+        "clone": {
+          "confirmationMessage": "Create a copy of \"<strong>{ templateLabel }</strong>\" by entering a name and description.",
+          "cloneLabel": "New Summary Name",
+          "cloneLabelPlaceholder": "Add summary Name",
+          "cloneDescription": "Description",
+          "cloneDescriptionPlaceholder": "Please add description",
+          "cloneHeader": "Clone Summary"
+        },
+        "delete": {
+          "deleteHeader": "Delete Config",
+          "deleteMessage": "Are you sure you want to delete "
+        }
+      },
+      "publishedLabel": "Published",
+      "status": {
+        "draft": "Draft",
+        "in_progress": "In Progress",
+        "failed": "Failed",
+        "published": "Published"
+      }
+    },
+    "summaryDetails": {
+      "label": "Summary name",
+      "labelPlaceholder": "Add Summary Name",
+      "description": "Description",
+      "descriptionPlaceholder": "Please add description",
+      "globalLabel": "Global",
+      "templateVersionLabel": "Template Version",
+      "templateVersionPlaceholder": "Please select template version",
+      "partner": "Partner",
+      "partnerPlaceholder": "Please select partner",
+      "account": "Account",
+      "accountPlaceholder": "Please select account",
+      "selectLLM": "Select LLM Model",
+      "selectLLMPlaceholder": "Please select LLM Model",
+      "nameRequired":"Summary name is required",
+      "listOfQuestions": {
+        "listOfQuestionsLabel": "List of Questions",
+        "listOfQuestionsPlaceholder": "Search Questions",
+        "addNewQuestion": "Add New Question",
+        "addQuestion": " + Add",
+        "userDefinedQuestions": "User Defined Questions",
+        "noQuestionsAvailable": "No Questions Available",
+        "addQuestionPromt": {
+          "title1": "Add Data",
+          "title2": "Test Question",
+          "backButton": "Back",
+          "addButton": "Add",
+          "questionLabel": "Question Label",
+          "questionLabelPlaceholder": "Please add question label",
+          "quesitonLabelTooltip": "Shown at runtime. Must be unique, under 20 characters, and have no special characters.",
+          "question": "Question",
+          "questionPlaceholder": "Please add question",
+          "instructionsForTheLlm": "Instructions for the LLM",
+          "instructionsForTheLlmPlaceholder": "Please add instructions for the LLM",
+          "sampleOneShotAnswer": "Sample One Shot Answer",
+          "sampleOneShotAnswerPlaceholder": "Please add sample one shot answer",
+          "uniphoreStandardQuestions": "Uniphore Standard Questions",
+          "addTranscript": "Add Transcript",
+          "addTranscriptPlaceholder": "Copy and paste the transcript",
+          "validation": {
+            "questionLabelRequired": "Question label is required.",
+            "questionLabelLength": "Question label must be between 3 and 20 characters long.",
+            "questionLabelInvalid": "Question label contains invalid characters.",
+            "questionRequired": "Question is required.",
+            "instructionsRequired": "Instructions for the LLM are required.",
+            "sampleAnswerRequired": "Sample one shot answer is required.",
+            "testQuestionRequired": "Add question is required.",
+            "testQuestionNameError": "Add question is name error.",
+            "testQuestionDuplicate": "Add question is duplciate."
+          }
+        },
+        "editQuestion": "Edit",
+        "editTitle": "Edit Question",
+        "testingQuestion": "Testing Question...",
+        "testingComplete": "Testing Complete...",
+        "transcriptionMandatory": "Transcription is mandatory",
+        "sampleOneShotAnswerRequired": "Sample One Shot Answer is required",
+        "questionRequired": "Question is required",
+        "instructionsForTheLlmRequired": "Instructions for the LLM is required",
+        "questionLabelRequired": "Question Label is required",
+        "questionLabelLengthError": "Question Label must be less than or equal to 20 characters",
+        "questionLabelSpecialCharsError": "Special characters are not allowed",
+        "questionLabelUniqueError": "Question Label must be unique",
+        "questionUpdatedSuccessfully": "Question updated successfully",
+        "questionUpdateError": "Error updating question"
+      },
+      "addNewQuestions": {
+        "title": "Add New Questions",
+        "searchPlaceholder": "Search Questions",
+        "addQuestion": "Add Question",
+        "testQuestion": "Test Question",
+        "addButton": "Add Selected Questions"
+      },
+      "footer": {
+        "advancedMode": "Advanced Mode",
+        "advancedModeEnabled": "Advanced mode enabled",
+        "cancel": "Cancel",
+        "saveDraftTest": "Save & Draft",
+        "publish": "Publish"
+      },
+      "summarySturcture": {
+        "styleSturcture": "Summary Style & Structure",
+        "size": "Summary Size",
+        "sizePlaceholder": "Please define the character limit",
+        "short": "Short Summary",
+        "format": "Summary Format",
+        "formatPlaceholder": "Please select summary format"
+      },
+      "language": {
+        "languageLabel": "Language",
+        "inputLanguage": "Input Language",
+        "inputLanguagePlaceholder": "Please select input language",
+        "outputLanguage": "Output Language",
+        "outputLanguagePlaceholder": "Please select output language",
+        "languageError": {
+          "inputLanguageRequired": "Input language is required.",
+          "outputLanguageRequired": "Output language is required."
+        }
+      },
+      "entities": {
+        "entitiesLabel": "Entities",
+        "enabledEntities": "Enabled Entities",
+        "entitiesToProvideByApplication": "Entities to be provided by application?",
+        "addEntities": "Add Entities",
+        "selectEntitiesPlaceholder": "Multi-select comp. for Entities",
+        "displayUndetectedEntitiesLabel": "Display Undetected Entities Label"
+      },
+      "streaming": {
+        "streamingLabel": "Streaming",
+        "streamingEnabled": "Enable Streaming"
+      }
+    },
+    "tabs": {
+      "runNewTest": "Run New Test",
+      "EditAndUpdate": "Edit & Update"
+    },
+    "preview": {
+      "title": "Summary Preview",
+      "emptyState": "Save to preview",
+      "mockData": {
+        "callReasons": {
+          "header": "Call Reasons",
+          "content": [
+            "The customer called to reset his online account password.",
+            "The customer would like to add a family member to the account.",
+            "The customer would like to upgrade the subscription."
+          ],
+          "shortSummary": [
+            "Stolen SIM card"
+          ]
+        },
+        "agentSteps": {
+          "header": "Agent Steps",
+          "content": [
+            "The agent asked the customer for his first and last name, policy number, old password, and new password.",
+            "The agent then updated the customer's old password and asked for the new password.",
+            "The agent also sent the customer an email with all the plans of the current policies."
+          ],
+          "shortSummary": [
+            "Activated new SIM card, issued directions for replacement"
+          ]
+        },
+        "outcome": {
+          "header": "Outcome",
+          "content": [
+            "The customer called to reset his online account password.",
+            "The customer would like to add a family member to the account.",
+            "The customer would like to upgrade the subscription."
+          ],
+          "shortSummary": [
+            "Successful SIM card replacement"
+          ]
+        },
+        "customerSentiment": {
+          "header": "Customer Sentiment",
+          "content": [
+            "The customer was satisfied with the outcome of the conversation."
+          ],
+          "shortSummary": [
+            "Satisfied"
+          ]
+        },
+        "paragraphFull": "The customer called to reset his online account password. The customer would like to add a family member to the account. The customer would like to upgrade the subscription.<br><br>The agent asked the customer for his first and last name, policy number, old password, and new password. The agent then updated the customer's old password and asked for the new password. The agent also sent the customer an email with all the plans of the current policies.<br><br>The outcome of the conversation was that the customer's password was successfully reset and the agent sent the customer an email with all the plans of the current policies.<br><br>The customer was satisfied with the outcome of the conversation.",
+        "paragraphShort": "The customer called to reset his online account password. The customer would like to upgrade the subscription.<br><br>The agent asked the customer for his first and last name, policy number, old password, and new password. The agent also sent the customer an email with all the plans of the current policies.<br><br>The customer was satisfied with the outcome of the conversation."
+      }
+    },
+    "testSummaryBuilder": {
+      "primaryDesc": "Upload Template",
+      "secondaryDesc": "Upload a template to test the summary builder.",
+      "upload": "Upload",
+      "uploadTestTemplate": "Upload Test Template",
+      "downloadTestTemplate": "Download Test Template"
+    },
+    "advanceMode": {
+      "advancedMode": "Advanced Mode",
+      "advanceModeInfo": "Use {'@'} or the icon menu to add actions.",
+      "accessAdvancedFeaturesAndSettings": "Access advanced features and settings",
+      "promptConfiguration": "Prompt Configuration",
+      "promptConfigurationDescription": "Use the icon menu to insert actions. Only one Transcript variable is allowed - either in the System Prompt or User Prompt.",
+      "parametersConfiguration": "Parameters",
+      "temperaturePrompt": "Temperature",
+      "temperaturePromptTooltip": "Controls creativity; higher = more varied output, lower = more precise.",
+      "seedPrompt": "Seed",
+      "seedPromptTooltip": "Ensures reproducibility of responses when using the same input.",
+      "toppPrompt": "Top-p",
+      "toppPromptTooltip": "Chooses from tokens within the smallest probability mass above p (nucleus sampling).",
+      "topkPrompt": "Top-k",
+      "topkPromptTooltip": "Chooses from the top k most likely tokens only.",
+      "maxTokensPrompt": "Max Tokens",
+      "maxTokensPromptTooltip": "Defines maximum output length; linked to Summary Size.",
+      "systemPrompt": "System Prompt",
+      "systemPromptTooltip": "Core instructions that define the model’s overall behavior and role.",
+      "EnterSystemPromt": "Enter system prompt",
+      "UserPrompt": "User Prompt",
+      "userPromptTooltip": "Primary user request or query the model responds to.",
+      "EnterUserPromt": "Enter user prompt",
+      "Guidelines": "Guidelines",
+      "guidelinesPromptTooltip": "Additional rules to enforce formatting, tone, or style in the summary.",
+      "EnterGuidelinesPromt": "Enter guidelines",
+      "OneShotExample": "One Shot example",
+      "oneShotPromptTooltip": "A sample input-output pair to guide the model’s response (optional).",
+      "EnterShotExample": "Enter one shot example"
+    },
+    "emptyList": {
+      "primaryDesc": "No Summary Templates Found",
+      "secondaryDesc": "Click on “Add New Summary Template” to start adding new Templates,and to add use more icon to “Upload Template”."
+    },
+    "tooltip": {
+      "labelTooltip": "Must be unique; Alphanumeric characters & '_' only. No spaces allowed.",
+      "descriptionTooltip": "For display purposes only. This is not part of the instructions to the Model.",
+      "summarySize": "Please specify the approximate character limit of summary"
+    },
+    "common": {
+      "AddBtnLabel": "Add",
+      "deleteBtnLabel": "Delete",
+      "cloneBtnLabel": "Clone",
+      "saveButton": "Save",
+      "cancelButton": "Cancel",
+      "test": "Test",
+      "resettoDefault": "Reset to Default",
+      "tableTitle": "Table Settings",
+      "rowDensityText": "Row Density",
+      "largeRowDensity": "Large",
+      "compactRowDensity": "Compact"
+    },
+    "validation": {
+      "templateName": {
+        "required": "Summary name is required",
+        "maxLength": "Summary name must be at most 20 characters long",
+        "noSpaces": "Summary name cannot contain spaces",
+        "invalidChars": "Summary name can only contain letters, numbers, and underscores",
+        "notUnique": "Summary name must be unique"
+      }
+    },
+    "publishModal": {
+      "title": "Publish",
+      "publishButton": "Publish",
+      "versionNotesLabel": "Version Notes",
+      "saveAsNewTemplateLabel": "Do you want to save this as new template?",
+      "templateNameLabel": "Template Name",
+      "templateNamePlaceholder": "Add Template Name"
+    },
+    "tagEditor": {
+      "entities": "Entities",
+      "questions": "Questions",
+      "oneShotAnswers": "One Shot Answers",
+      "targetLanguage": "Target Language",
+      "transcript": "Transcript"
+    },
+    "notification": {
+      "savedSummarySuccessMsg": "Successfully saved the template - `{summaryName}`",
+      "savedSummaryFailureMsg": "Failed to save the template - `{summaryName}`",
+      "deletedSummarySuccessMsg": "Successfully deleted the template - `{summaryName}`",
+      "deletedSummaryFailureMsg": "Failed to delete the template - `{summaryName}`",
+      "clonedSummarySuccessMsg": "Successfully cloned the template - `{summaryName}`",
+      "clonedSummaryFailureMsg": "Failed to delete the template - `{summaryName}`",
+      "publishedSummarySuccessMsg": "Successfully published the template - `{summaryName}`",
+      "publishedSummaryFailureMsg": "Failed to published the template - `{summaryName}`",
+      "editedSummarySuccessMsg": "Successfully updated - `{summaryName}`",
+      "editedSummaryFailureMsg": "Failed to updated - `{summaryName}`",
+      "createdQuestionSuccessMsg": "Successfully created question - `{QName}`",
+      "createdQuestionFailureMsg": "Failed to created question - `{QName}`",
+      "updatedQuestionSuccessMsg": "Successfully updated question - `{QName}`",
+      "updatedQuestionFailureMsg": "Failed to update question - `{QName}`",
+      "uploadInputFileSuccess": "Successfully uploaded",
+      "uploadInputFileFail": "Upload got failed",
+      "allPromptFieldsAreMandatory": "All prompt fields are mandatory",
+      "allPromptFieldsAreMandatoryDescription": "Please fill in all the prompt fields.",
+      "pleaseEnterValidNumber": "Please enter a valid number"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schedule": {
+    "monthly": {
+      "occurrenceDay": "''| 1st | 2nd | 3rd | {n}th "
+    }
+  },
+  "gridHeaderCount": {
+    "record": "{count} record | {count} records",
+    "event": "{count} event | {count} events",
+    "policy": "{count} policy | {count} policies",
+    "account": "{count} account | {count} accounts",
+    "user": "{count} user | {count} users",
+    "connections": "{count} connection | {count} connections",
+    "connectors": "{count} connector | {count} connectors",
+    "document": "{count} document | {count} documents",
+    "workflow": "{count} workflow | {count} workflows",
+    "launchplans": "{count} launchplan | {count} launchplans",
+    "job": "{count} job | {count} jobs",
+    "chunk": "{count} chunk | {count} chunks",
+    "eventPlus": "{count}+ events"
+  },
+  "button": {
+    "refresh": "Refresh"
+  }
+}

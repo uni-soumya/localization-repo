@@ -1,0 +1,11 @@
+{
+  "error": {
+    "missingChannel": "Couldn't find channel information",
+    "failedLoadChannel": "Failed to load channel",
+    "failedStartConversation": "Failed to start conversation",
+    "failedLoadMessage": "Failed to load message",
+    "failedSendMessage": "Failed to send message",
+    "internalServerError": "Internal server error - Contact Support",
+    "somethingWentWrong": "Something went wrong!"
+  }
+}

@@ -1,0 +1,651 @@
+{
+  "disposition": {
+    "header": {
+      "title": "Disposition",
+      "createButton": "Nouvelle configuration",
+      "searchPlaceholder": "Recherche",
+      "configs": "Configuration(s)",
+      "config": "configuration",
+      "homeIcon": "home",
+      "uploadInputTemplateTitle": "Télécharger le modèle d'entrée",
+      "uploadTestTemplateTitle": "Télécharger un modèle de test",
+      "uploadSourceFileTitle": "Télécharger le fichier source",
+      "templateUploadSuccessMsg": "Le modèle `{templateType}` a été téléchargé avec succès - `{templateName}`",
+      "templateUploadFailureMsg": "Échec du téléchargement du modèle `{templateType}` - `{templateName}`",
+      "templateDownloadFailureMsg": "Échec du téléchargement du modèle `{templateType}`",
+      "upload": "Télécharger",
+      "emptyList": {
+        "primaryDesc": "Aucune décision trouvée",
+        "superAdminSecondaryDesc": "Cliquez sur <strong>\"+ Nouvelle configuration\"</strong> pour commencer à ajouter une nouvelle configuration,<br/>et d'utiliser plus d'icône pour <strong>\"Télécharger le modèle\"</strong>.",
+        "secondaryDesc": "Cliquez sur <strong>\"+ Nouvelle configuration\"</strong> pour commencer à ajouter une nouvelle configuration."
+      }
+    },
+    "card": {
+      "deleteTitle": "Supprimer",
+      "globalTitle": "Mondial",
+      "languageTitle": "Langue",
+      "openButtonTitle": "Ouvrir",
+      "assignButtonTitle": "Attribuer",
+      "underTrainingStatus": "En cours de formation",
+      "trainedStatus": "Qualifié",
+      "trainingFailedstatus": "Échec de la formation",
+      "yesLabel": "Oui",
+      "noLabel": "Non",
+      "deleteDispSuccessMsg": "Une disposition a été supprimée avec succès - `{dispositionName} - {version}`",
+      "dispConfigInUseMsg": "Impossible de supprimer la disposition - `{dispositionName} - {version}`. ",
+      "deleteDispFailureMsg": "Échec de la suppression de la disposition - `{dispositionName} - {version}`",
+      "clearMapping": "Effacer le mappage",
+      "clearMappingSuccessMsg": "Tous les mappages d’organisation ont été effacés avec succès.",
+      "clearMappingFailureMsg": "Échec de la suppression des mappages d'organisation. ",
+      "status": {
+        "trained": "Entraîné",
+        "completed": "Terminé",
+        "under_training": "En cours d'entraînement",
+        "in_progress": "En cours"
+      }
+    },
+    "deleteDialog": {
+      "title": "Supprimer la configuration",
+      "description": "Êtes-vous sûr de vouloir supprimer cette configuration ?",
+      "confirmButton": "Oui",
+      "cancelButton": "Non"
+    },
+    "createModal": {
+      "title": "Créer une nouvelle disposition",
+      "editTitle": "Modifier la disposition",
+      "nameLabel": "Configuration. ",
+      "configNameTooltip": "Caractères alphanumériques et '_' uniquement. ",
+      "namePlaceholder": "Veuillez entrer le nom",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Veuillez ajouter une description",
+      "partnerLabel": "Partenaire",
+      "partnerPlaceholder": "Sélectionnez un partenaire",
+      "noPartnerAvailablePlaceholder": "Aucun partenaire disponible",
+      "accountLabel": "Compte",
+      "noAccountAvailablePlaceholder": "Aucun compte disponible",
+      "accountPlaceholder": "Sélectionnez un compte",
+      "inputLanguageLabel": "Langue d'appel d'entrée",
+      "outputLanguageLabel": "Langage de disposition des sorties",
+      "englishDefaultLabel": "Anglais (par défaut)",
+      "globalLabel": "Mondial",
+      "createButton": "Ajouter",
+      "updateButton": "Mise à jour",
+      "cancelButton": "Annuler",
+      "versionLabel": "Version",
+      "uploadConfigFileLabel": "Téléchargez la configuration. ",
+      "downloadInputTemplateFileLabel": "Télécharger le modèle de configuration",
+      "dragAndDropToUploadLabel": "Cliquez ou faites glisser le fichier vers cette zone pour le télécharger",
+      "dragAndDropToUploadHint": "Prise en charge d'un seul téléchargement.",
+      "fileErrorMessages": {
+        "typeError": "Type de fichier invalide. ",
+        "empty": "Le fichier est vide ou ne contient aucune donnée.",
+        "headerCount": "Le fichier doit contenir exactement {headerCount} en-têtes, à savoir : {headerNames}.",
+        "invalidHeaders": "En-têtes non valides trouvés : {invalidHeaderNames}",
+        "invalidFileType": "Type de fichier invalide. ",
+        "duplicateTreeLabel": "Disposition {level} en double trouvée {label}.",
+        "invalidaData": "Informations incohérentes dans le fichier de configuration.\n"
+      },
+      "nameError": {
+        "required": "Le nom de la configuration est requis.",
+        "length": "Le nom de la configuration doit comporter entre 3 et 50 caractères.",
+        "invalid": "Le nom de la configuration contient des caractères non valides.",
+        "duplicate": "Le nom de la configuration existe déjà."
+      }
+    },
+    "assignModal": {
+      "assignTo": "Attribuer à",
+      "orgTitle": "Organisation",
+      "assigned": "Attribué",
+      "notAssigned": "Non attribué",
+      "confirmAssignment": "Confirmer l'affectation",
+      "organization": "Organisation",
+      "expId": "Expériences)",
+      "n/a": "N / A",
+      "assignDisposition": "Attribuer une disposition",
+      "selectOrgs": "Sélectionnez une ou plusieurs organisations",
+      "orgRequiredError": "L'organisation est un champ obligatoire.",
+      "mappingSuccess": "Les dispositions ont été mappées avec succès à la ou aux organisations sélectionnées.",
+      "sameOrgMappedError": "Impossible de créer un mappage : une ou plusieurs organisations sont déjà mappées à une autre disposition."
+    },
+    "deleteMapping": {
+      "clearMapping": "Effacer le mappage",
+      "clearMappingTitle": "Annuler l'attribution d'une ou plusieurs organisations ?",
+      "clearMappingMessage": "Cela supprimera la ou les organisations attribuées à la disposition : {disposition}.\n",
+      "clearBtnLabel": "Annuler l'attribution"
+    },
+    "selectVersionModal": {
+      "title": "Veuillez sélectionner la version",
+      "deleteTitle": "Supprimer la configuration",
+      "versionLabel": "Sélectionnez la version",
+      "versionPlaceholder": "Sélectionnez la version",
+      "openButtonLabel": "Ouvrir",
+      "deleteButtonLabel": "Supprimer",
+      "cancelButton": "Annuler",
+      "deleteMessage": "Etes-vous sûr de vouloir supprimer ",
+      "versionError": {
+        "required": "La version est requise.",
+        "duplicate": "La version existe déjà."
+      }
+    },
+    "dispositionDetails": {
+      "editButtonLabel": "Modifier",
+      "updateButtonLabel": "Mise à jour",
+      "editDisableTooltip": "La modification des détails de la disposition est actuellement désactivée. ",
+      "cancelButtonLabel": "Annuler",
+      "saveAndTrainButtonLabel": "Enregistrer et former",
+      "downloadConfigButtonLabel": "Télécharger la configuration",
+      "createDispSuccessMsg": "Disposition créée avec succès - `{dispositionName}` - `{version}`",
+      "createDispFailureMsg": "Échec de la création de la disposition - `{dispositionName}`",
+      "updateDispSuccessMsg": "!!!>>> Unexpected token '<', \"<html lang\"... is not valid JSON <<<!!!",
+      "updateDispFailedMsg": "Échec de la mise à jour de la disposition - `{dispositionName}` - `{version}`",
+      "tree": {
+        "searchPlaceholder": "Recherche"
+      },
+      "nodeDetails": {
+        "title": "Détails de la disposition",
+        "nameLabel": "Nom",
+        "levelLabel": "Niveau",
+        "descriptionLabel": "Description"
+      },
+      "configDetails": {
+        "title": "Détails de configuration",
+        "nameLabel": "Nom",
+        "nameLabelPlaceholder": "Ajouter un nom de configuration",
+        "descriptionLabel": "Description",
+        "descriptionLabelPlaceholder": "Veuillez ajouter une description",
+        "revertUpdate": "Annuler la mise à jour",
+        "partnerLabel": "Partenaire",
+        "accountLabel": "Compte",
+        "inputLanguageLabel": "Langue d'appel d'entrée",
+        "outputLanguageLabel": "Langage de disposition des sorties",
+        "versionLabel": "Version",
+        "scopeLabel": "Portée",
+        "sourceFileLabel": "Fichier source",
+        "globalLabel": "Mondial",
+        "localLabel": "Locale",
+        "updateButtonLabel": "Mise à jour"
+      },
+      "tabs": {
+        "configureHierarchy": "Configurer la hiérarchie",
+        "testToValidate": "Test de validation",
+        "standardDispositions": "Dispositions standard",
+        "myDispositions": "Mes dispositions",
+        "assignments": "Affectations"
+      }
+    },
+    "testToValidate": {
+      "tableColumnDef": {
+        "testLabel": "Étiquette de test",
+        "noOfCalls": "Nombre d'appels",
+        "dateTime": "Date et heure",
+        "processingTime": "Temps de traitement",
+        "status": "Statut",
+        "norowDataMsg": "Aucun résultat de test trouvé",
+        "norowDataDesc": "Cliquez sur « Exécuter le test » pour télécharger un fichier XLS à tester",
+        "completed": "Terminé",
+        "processing": "En cours de traitement",
+        "failed": "Échoué"
+      },
+      "uploadFileModal": {
+        "title": "Exécuter le test",
+        "footerLabel": "Exécuter le test",
+        "cancelButtonLabel": "Annuler"
+      },
+      "notification": {
+        "downloadTestResultsErrorMsg": "Échec du téléchargement des résultats du test - `{label}`",
+        "createTestDispositionSuccessMsg": "Le modèle de disposition du test a été enregistré avec succès - `{label}` ",
+        "createTestDispositionErrorMsg": "Échec de la création de la disposition de test - `{label}` ",
+        "validExcelFileErrorMsg": "Veuillez télécharger un fichier Excel valide",
+        "empty": "Le fichier est vide ou ne contient aucune donnée.",
+        "headerCount": "Le fichier doit contenir exactement {headerCount} en-têtes, à savoir : {headerNames}.",
+        "invalidHeaders": "En-têtes non valides trouvés : {invalidHeaderNames}",
+        "invalidFileType": "Type de fichier invalide. ",
+        "missingRequiredColumnsErrorMsg": "Fichier invalide : veuillez vous assurer que toutes les lignes contiennent à la fois SI.No et Transcript, et qu'il n'y a pas de lignes vides entre les deux.",
+        "exceedsTranscriptRecordsErrorMsg": "Le fichier téléchargé dépasse la limite maximale de {maxRecords} enregistrements de transcription.",
+        "uploadedFileSizExceeded": "La taille du fichier téléchargé dépasse la limite maximale de {maxFileSize} Mo.",
+        "transcriptTurnNotValidErrorMsg": "Le tour de transcription n’est pas valide. ",
+        "multiplEscelSheetsErrorMsg": "Plusieurs feuilles trouvées dans le fichier Excel. "
+      }
+    },
+    "validation": {
+      "emptyRow": "Ligne vide détectée",
+      "whitespaceLabel": "Étiquette contenant uniquement des espaces trouvée à {level}",
+      "specialCharLabel": "L'étiquette '{label}' à {level} contient des caractères spéciaux ou des emojis",
+      "specialCharDefinition": "La définition '{definition}' contient des caractères spéciaux ou des emojis",
+      "duplicateLabel": "Étiquette en double '{label}' trouvée à {level}",
+      "duplicatePath": "Étiquette en double trouvée - `{path}`",
+      "duplicateNameError": "Nom en double trouvé - `{value}`",
+      "duplicateDefinition": "L'étiquette '{label}' a des définitions contradictoires",
+      "missingParent": "Disposition parentale manquante pour {level}",
+      "emptyDispositionDefinition": "Définition de disposition vide trouvée."
+    }
+  },
+  "summary": {
+    "builderView": {
+      "summaryTemplatesTitle": "Générateur de résumé",
+      "createButton": "Nouveau modèle de résumé",
+      "questionsManagerTitle": "Gestionnaire de questions",
+      "summaryTemplatesViewOption": "Modèles de résumé",
+      "questionsManagerViewOption": "Gestionnaire de questions",
+      "tabs": {
+        "buildSummary": "Construire un résumé",
+        "testToValidate": "Tester à valider"
+      },
+      "templates": {
+        "uniphoreStandardTemplates": "Modèles standards Uniphore",
+        "userDefinedTemplates": "Modèles définis par l'utilisateur"
+      },
+      "presentationFormat": {
+        "sectionBullets": "Sectionnel - Puces",
+        "sectionNumeric": "Sectionnel - Numérique",
+        "paragraph": "Paragraphe",
+        "sectionParagraph": "Sectionnel - Paragraphe"
+      }
+    },
+    "testTemplateView": {
+      "footer": {
+        "downloadTemplateButtonLabel": "Télécharger le modèle de test",
+        "canceButtonLabel": "Annuler"
+      },
+      "tableColumnDef": {
+        "norowDataMsg": "Aucun résultat trouvé",
+        "norowDataDesc": "Déposez le fichier .XLS avec les transcriptions ou téléchargez le modèle à remplir et à télécharger",
+        "createTestSummarySuccessMsg": "Le modèle de résumé du test a été enregistré avec succès - `{label}` ",
+        "createTestSummaryErrorMsg": "Échec de la création du résumé du test - `{label}` ",
+        "retryTestSuccessMsg": "J'ai réessayé avec succès le résumé du test - `{label}` ",
+        "retryTestErrorMsg": "Échec de la nouvelle tentative du résumé du test - `{label}` "
+      },
+      "excelValidation": {
+        "validExcelFileErrorMsg": "Veuillez télécharger un fichier Excel valide",
+        "uploadCorrectFileErrorMsg": "Veuillez télécharger un fichier Excel",
+        "headerCount": "Le fichier doit contenir exactement {headerCount} en-têtes, à savoir : {headerNames}",
+        "empty": "Le fichier est vide ou ne contient aucune donnée.",
+        "invalidHeaders": "En-têtes non valides trouvés : {invalidHeaderNames}",
+        "invalidFileType": "Type de fichier invalide. ",
+        "missingRequiredColumnsErrorMsg": "Fichier invalide : veuillez vous assurer que toutes les lignes contiennent à la fois SI.No et Transcript, et qu'il n'y a pas de lignes vides entre les deux.",
+        "exceedsTranscriptRecordsErrorMsg": "Le fichier téléchargé dépasse la limite maximale de {maxRecords} enregistrements de transcription.",
+        "uploadedFileSizExceeded": "La taille du fichier téléchargé dépasse la limite maximale de {maxFileSize} Mo.",
+        "transcriptTurnNotValidErrorMsg": "Le tour de transcription n’est pas valide. ",
+        "multiplEscelSheetsErrorMsg": "Plusieurs feuilles trouvées dans le fichier Excel. "
+      }
+    },
+    "questionsManager": {
+      "searchPlaceholder": "Recherche",
+      "questionLabel": "Étiquette de question",
+      "questionPrompt": "Rapide",
+      "questionText": "Texte de la question",
+      "sampleOneShotAnswer": "Exemple 1 – Réponse instantanée",
+      "bulkActionsLabel": "Actions en Masse",
+      "category": "Catégorie",
+      "questions": "Questions",
+      "selectedQuestions": "Choisi",
+      "categoryOptions": {
+        "all": "Tous",
+        "standard": "Standard",
+        "custom": "Coutume"
+      },
+      "actions": {
+        "deleteQuestion": "Supprimer la question",
+        "setAsStandard": "Définir comme standard",
+        "convertToCustom": "Convertir en personnalisé"
+      },
+      "bulkActions": {
+        "deleteBulkQuestions": "Supprimer les questions",
+        "deleteBulkMessage": "Certaines des questions sélectionnées sont liées à des modèles et ne peuvent pas \n",
+        "deleteBulkTitle": "Supprimer les questions",
+        "deleteBulkConfirm": "Supprimer les questions"
+      },
+      "questionEdit": {
+        "title": " Détails des questions",
+        "questionTextTooltip": "Doit être unique, contenir moins de 20 caractères et sans caractères spéciaux.",
+        "promptTooltip": "Limité à 500 caractères et ne peut pas contenir de balises de script.",
+        "sampleOneShotAnswerTooltip": "Limité à 500 caractères et doit être uniquement du texte.",
+        "questionLabelError": "L'étiquette ne peut pas être vide, elle doit comporter au maximum 15 caractères.",
+        "questionTextError": "Le texte ne peut pas être vide, il doit comporter au maximum 20 caractères.",
+        "promptError": "L'invite ne peut pas être vide, elle doit contenir au maximum 500 caractères.",
+        "sampleOneShotAnswerError": "L'exemple de réponse unique ne peut pas être vide et doit comporter au maximum 500 caractères.",
+        "templatesListTitle": "Modèles utilisés",
+        "noTemplatesFound": "Aucun modèle utilisé pour cette question",
+        "actionRequiredTextButton": "Afficher les modèles associés",
+        "actionRequiredTitle": "Action restreinte",
+        "deleteQuestionNotification": {
+          "title": "Supprimer la question",
+          "forbiddenMessage": "Cette question ne peut pas être supprimée car elle est actuellement utilisée dans un ou plusieurs \n",
+          "allowedMessage": "Cette question n'est utilisée dans aucun modèle et sera définitivement \n",
+          "confirmTextButton": "Supprimer la question"
+        },
+        "demoteQuestionNotification": {
+          "title": "Convertir en personnalisé",
+          "forbiddenMessage": "Cette question ne peut pas être rétrogradée car elle est actuellement utilisée dans un ou plusieurs \n",
+          "allowedMessage": "Cette question sera convertie en question personnalisée. \n",
+          "confirmTextButton": "Convertir en personnalisé"
+        },
+        "promoteQuestionNotification": {
+          "title": "Convertir en standard",
+          "allowedMessage": "Cette question sera promue en question standard et sera disponible \n",
+          "confirmTextButton": "Convertir en standard"
+        },
+        "confirmSavingQuestion": "Cette question est actuellement utilisée dans un ou plusieurs modèles.\n\nL'enregistrement de cette question la mettra à jour dans tous les modèles associés.\n\nVoulez-vous enregistrer les modifications ?",
+        "confirmEditingQuestion": "Cette question est actuellement utilisée dans un ou plusieurs modèles.\n\nVoulez-vous quand même la modifier ?",
+        "confirmSaveButtonLabel": "Confirmer Enregistrer",
+        "confirmEditTitle": "Confirmer la modification",
+        "continueLabel": "Continuer",
+        "cancelLabel": "Annuler",
+        "processingTimeLabel": "Temps de traitement",
+        "outputLabel": "Sortie",
+        "processingData": "Traitement des données...",
+        "processing": "Traitement"
+      }
+    },
+    "card": {
+      "searchPlaceholder": "Recherche",
+      "searchCount": "Résumés",
+      "globalTitle": "Mondial",
+      "yesLabel": "Oui",
+      "noLabel": "Non",
+      "doneLabel": "Terminé",
+      "inputLanguageTitle": "Langue d'entrée",
+      "ouputLanguageTitle": "Langue de sortie",
+      "openButtonTitle": "Ouvrir",
+      "deleteTitle": "Supprimer",
+      "cloneTitle": "Cloner",
+      "openButtonLabel": "Ouvrir",
+      "model": {
+        "open": {
+          "openHeader": "Veuillez sélectionner la version",
+          "versionLabel": "Notes de version",
+          "versionLabelPlaceholder": "Veuillez ajouter des notes",
+          "emptyVersionNotesPlaceholder": "Aucune note de version disponible"
+        },
+        "clone": {
+          "confirmationMessage": "Créez une copie de \"<strong>{ étiquettemodèle }</strong>\" en saisissant un nom et une description.",
+          "cloneLabel": "Nouveau nom du résumé",
+          "cloneLabelPlaceholder": "Ajouter un résumé Nom",
+          "cloneDescription": "Description",
+          "cloneDescriptionPlaceholder": "Veuillez ajouter une description",
+          "cloneHeader": "Résumé du clonage"
+        },
+        "delete": {
+          "deleteHeader": "Supprimer la configuration",
+          "deleteMessage": "Etes-vous sûr de vouloir supprimer "
+        }
+      },
+      "publishedLabel": "publié",
+      "status": {
+        "draft": "Brouillon",
+        "in_progress": "En Cours",
+        "failed": "Échoué",
+        "published": "Publié"
+      }
+    },
+    "summaryDetails": {
+      "label": "Nom du résumé",
+      "labelPlaceholder": "Ajouter un nom de résumé",
+      "description": "Description",
+      "descriptionPlaceholder": "Veuillez ajouter une description",
+      "globalLabel": "Mondial",
+      "templateVersionLabel": "Version du modèle",
+      "templateVersionPlaceholder": "Veuillez sélectionner la version du modèle",
+      "partner": "Partenaire",
+      "partnerPlaceholder": "Veuillez sélectionner un partenaire",
+      "account": "Compte",
+      "accountPlaceholder": "Veuillez sélectionner un compte",
+      "selectLLM": "Sélectionnez le modèle LLM",
+      "selectLLMPlaceholder": "Veuillez sélectionner le modèle LLM",
+      "listOfQuestions": {
+        "listOfQuestionsLabel": "Liste des questions",
+        "listOfQuestionsPlaceholder": "Questions de recherche",
+        "addNewQuestion": "Ajouter une nouvelle question",
+        "addQuestion": " + Ajouter",
+        "userDefinedQuestions": "Questions définies par l'utilisateur",
+        "noQuestionsAvailable": "Aucune question disponible",
+        "addQuestionPromt": {
+          "title1": "Ajouter des données",
+          "title2": "Question test",
+          "backButton": "Dos",
+          "addButton": "Ajouter",
+          "questionLabel": "Étiquette de question",
+          "questionLabelPlaceholder": "Veuillez ajouter une étiquette de question",
+          "quesitonLabelTooltip": "Affiché au moment de l’exécution. ",
+          "question": "Question",
+          "questionPlaceholder": "Veuillez ajouter une question",
+          "instructionsForTheLlm": "Instructions pour le LLM",
+          "instructionsForTheLlmPlaceholder": "Veuillez ajouter des instructions pour le LLM",
+          "sampleOneShotAnswer": "Exemple de réponse unique",
+          "sampleOneShotAnswerPlaceholder": "Veuillez ajouter un exemple de réponse unique",
+          "uniphoreStandardQuestions": "Questions standards Uniphore",
+          "addTranscript": "Ajouter une transcription",
+          "addTranscriptPlaceholder": "Copiez et collez la transcription",
+          "validation": {
+            "questionLabelRequired": "Une étiquette de question est requise.",
+            "questionLabelLength": "L’étiquette de la question doit comporter entre 3 et 20 caractères.",
+            "questionLabelInvalid": "Le libellé de la question contient des caractères non valides.",
+            "questionRequired": "Une question est requise.",
+            "instructionsRequired": "Des instructions pour le LLM sont requises.",
+            "sampleAnswerRequired": "Un exemple de réponse unique est requis.",
+            "testQuestionRequired": "L'ajout d'une question est requis.",
+            "testQuestionNameError": "Ajouter une question est une erreur de nom.",
+            "testQuestionDuplicate": "L'ajout d'une question est en double."
+          }
+        },
+        "editQuestion": "Modifier",
+        "editTitle": "Modifier la question",
+        "testingQuestion": "Test de la question...",
+        "testingComplete": "Test terminé...",
+        "transcriptionMandatory": "La transcription est obligatoire",
+        "sampleOneShotAnswerRequired": "Un exemple de réponse unique est requis.",
+        "questionRequired": "Une question est requise.",
+        "instructionsForTheLlmRequired": "Des instructions pour le LLM sont requises.",
+        "questionLabelRequired": "Une étiquette de question est requise.",
+        "questionLabelLengthError": "L’étiquette de la question doit comporter moins de 20 caractères.",
+        "questionLabelSpecialCharsError": "Les caractères spéciaux ne sont pas autorisés.",
+        "questionLabelUniqueError": "L’étiquette de la question doit être unique.",
+        "questionUpdatedSuccessfully": "Question mise à jour avec succès",
+        "questionUpdateError": "Erreur lors de la mise à jour de la question"
+      },
+      "addNewQuestions": {
+        "title": "Ajouter de nouvelles questions",
+        "searchPlaceholder": "Rechercher des questions",
+        "addQuestion": "Ajouter une question",
+        "testQuestion": "Question test",
+        "addButton": "Ajouter les questions sélectionnées"
+      },
+      "footer": {
+        "advancedMode": "Mode avancé",
+        "advancedModeEnabled": "Mode avancé activé",
+        "cancel": "Annuler",
+        "saveDraftTest": "Enregistrer et brouillon",
+        "publish": "Publier"
+      },
+      "summarySturcture": {
+        "styleSturcture": "Style et structure du résumé",
+        "size": "Taille du résumé",
+        "sizePlaceholder": "Veuillez définir la limite de caractères",
+        "short": "Bref résumé",
+        "format": "Format du résumé",
+        "formatPlaceholder": "Veuillez sélectionner le format du résumé"
+      },
+      "language": {
+        "languageLabel": "Langue",
+        "inputLanguage": "Langue d'entrée",
+        "inputLanguagePlaceholder": "Veuillez sélectionner la langue de saisie",
+        "outputLanguage": "Langue de sortie",
+        "outputLanguagePlaceholder": "Veuillez sélectionner la langue de sortie",
+        "languageError": {
+          "inputLanguageRequired": "La langue de saisie est requise.",
+          "outputLanguageRequired": "La langue de sortie est requise."
+        }
+      },
+      "entities": {
+        "entitiesLabel": "Entités",
+        "enabledEntities": "Entités activées",
+        "entitiesToProvideByApplication": "Entités à fournir par candidature ?",
+        "addEntities": "Ajouter des entités",
+        "selectEntitiesPlaceholder": "Composition à sélection multiple. ",
+        "displayUndetectedEntitiesLabel": "Afficher l'étiquette des entités non détectées"
+      },
+      "streaming": {
+        "streamingLabel": "Streaming",
+        "streamingEnabled": "Activer la diffusion en continu"
+      }
+    },
+    "tabs": {
+      "runNewTest": "Exécuter un nouveau test",
+      "EditAndUpdate": "Modifier et mettre à jour"
+    },
+    "preview": {
+      "title": "Aperçu du résumé",
+      "emptyState": "Enregistrer pour prévisualiser",
+      "mockData": {
+        "callReasons": {
+          "header": "Raisons de l'appel",
+          "content": [
+            "Le client a appelé pour réinitialiser le mot de passe de son compte en ligne.",
+            "Le client souhaite ajouter un membre de la famille au compte.",
+            "Le client souhaite mettre à niveau l'abonnement."
+          ],
+          "shortSummary": [
+            "Carte SIM volée"
+          ]
+        },
+        "agentSteps": {
+          "header": "Étapes de l'agent",
+          "content": [
+            "L'agent a demandé au client son prénom et nom de famille, son numéro de police, son ancien mot de passe et son nouveau mot de passe.",
+            "L'agent a ensuite mis à jour l'ancien mot de passe du client et a demandé le nouveau mot de passe.",
+            "L'agent a également envoyé au client un e-mail avec tous les plans des polices actuelles."
+          ],
+          "shortSummary": [
+            "Nouvelle carte SIM activée, instructions de remplacement fournies"
+          ]
+        },
+        "outcome": {
+          "header": "Résultat",
+          "content": [
+            "Le client a appelé pour réinitialiser le mot de passe de son compte en ligne.",
+            "Le client souhaite ajouter un membre de la famille au compte.",
+            "Le client souhaite mettre à niveau l'abonnement."
+          ],
+          "shortSummary": [
+            "Remplacement réussi de la carte SIM"
+          ]
+        },
+        "customerSentiment": {
+          "header": "Sentiment du client",
+          "content": [
+            "Le client était satisfait du résultat de la conversation."
+          ],
+          "shortSummary": [
+            "Satisfait"
+          ]
+        },
+        "paragraphFull": "Le client a appelé pour réinitialiser le mot de passe de son compte en ligne. Le client souhaite ajouter un membre de la famille au compte. Le client souhaite mettre à niveau l'abonnement.<br><br>L'agent a demandé au client son prénom et nom de famille, son numéro de police, son ancien mot de passe et son nouveau mot de passe. L'agent a ensuite mis à jour l'ancien mot de passe du client et a demandé le nouveau mot de passe. L'agent a également envoyé au client un e-mail avec tous les plans des polices actuelles.<br><br>Le résultat de la conversation était que le mot de passe du client a été réinitialisé avec succès et l'agent a envoyé au client un e-mail avec tous les plans des polices actuelles.<br><br>Le client était satisfait du résultat de la conversation.",
+        "paragraphShort": "Le client a appelé pour réinitialiser le mot de passe de son compte en ligne. Le client souhaite mettre à niveau l'abonnement.<br><br>L'agent a demandé au client son prénom et nom de famille, son numéro de police, son ancien mot de passe et son nouveau mot de passe. L'agent a également envoyé au client un e-mail avec tous les plans des polices actuelles.<br><br>Le client était satisfait du résultat de la conversation."
+      }
+    },
+    "testSummaryBuilder": {
+      "primaryDesc": "Télécharger le modèle",
+      "secondaryDesc": "Téléchargez un modèle pour tester le générateur de résumé.",
+      "upload": "Télécharger",
+      "uploadTestTemplate": "Télécharger un modèle de test",
+      "downloadTestTemplate": "Télécharger le modèle de test"
+    },
+    "advanceMode": {
+      "advancedMode": "Mode avancé",
+      "advanceModeInfo": "Utilisez {'@'} ou le menu d'icônes pour ajouter des actions.",
+      "accessAdvancedFeaturesAndSettings": "Accéder aux fonctionnalités et paramètres avancés",
+      "promptConfiguration": "Configuration rapide",
+      "promptConfigurationDescription": "Utilisez le menu d'icônes pour insérer des actions. ",
+      "parametersConfiguration": "Paramètres",
+      "temperaturePrompt": "Température",
+      "temperaturePromptTooltip": "Contrôle la créativité ; ",
+      "seedPrompt": "Graine",
+      "seedPromptTooltip": "Garantit la reproductibilité des réponses lors de l’utilisation de la même entrée.",
+      "toppPrompt": "Haut-p",
+      "toppPromptTooltip": "Choisit parmi les jetons dans la plus petite masse de probabilité supérieure à p (échantillonnage du noyau).",
+      "topkPrompt": "Top-k",
+      "topkPromptTooltip": "Choisit uniquement parmi les k jetons les plus probables.",
+      "maxTokensPrompt": "Nombre maximum de jetons",
+      "maxTokensPromptTooltip": "Définit la longueur maximale de sortie ; ",
+      "systemPrompt": "Invite système",
+      "systemPromptTooltip": "Instructions de base qui définissent le comportement et le rôle global du modèle.",
+      "EnterSystemPromt": "Entrez l'invite du système",
+      "UserPrompt": "Invite utilisateur",
+      "userPromptTooltip": "Demande ou requête de l'utilisateur principal à laquelle le modèle répond.",
+      "EnterUserPromt": "Entrez l'invite de l'utilisateur",
+      "Guidelines": "Lignes directrices",
+      "guidelinesPromptTooltip": "Règles supplémentaires pour appliquer la mise en forme, le ton ou le style dans le résumé.",
+      "EnterGuidelinesPromt": "Entrez les lignes directrices",
+      "OneShotExample": "Exemple One Shot",
+      "oneShotPromptTooltip": "Un exemple de paire d’entrées-sorties pour guider la réponse du modèle (facultatif).",
+      "EnterShotExample": "Entrez un exemple d'une seule prise"
+    },
+    "emptyList": {
+      "primaryDesc": "Aucun modèle de résumé trouvé",
+      "secondaryDesc": "Cliquez sur « Ajouter un nouveau modèle de résumé » pour commencer à ajouter de nouveaux modèles et pour ajouter l'icône Utiliser plus à « Télécharger le modèle »."
+    },
+    "tooltip": {
+      "labelTooltip": "Doit être unique ; ",
+      "descriptionTooltip": "À des fins d’affichage uniquement. ",
+      "summarySize": "Veuillez préciser la limite approximative de caractères du résumé"
+    },
+    "common": {
+      "AddBtnLabel": "Ajouter",
+      "deleteBtnLabel": "Supprimer",
+      "cloneBtnLabel": "Cloner",
+      "saveButton": "Sauvegarder",
+      "cancelButton": "Annuler",
+      "test": "Test",
+      "resettoDefault": "Réinitialiser par défaut",
+      "tableTitle": "Paramètres du Tableau",
+      "rowDensityText": "Densité des Lignes",
+      "largeRowDensity": "Grand",
+      "compactRowDensity": "Compact"
+    },
+    "validation": {
+      "templateName": {
+        "required": "Le nom du résumé est requis",
+        "maxLength": "Le nom du résumé doit faire au maximum 20 caractères",
+        "noSpaces": "Le nom du résumé ne peut pas contenir d'espaces",
+        "invalidChars": "Le nom du résumé ne peut contenir que des lettres, des chiffres et des traits de soulignement",
+        "notUnique": "Le nom du résumé doit être unique"
+      }
+    },
+    "publishModal": {
+      "title": "Publier",
+      "publishButton": "Publier",
+      "versionNotesLabel": "Notes de version",
+      "saveAsNewTemplateLabel": "Voulez-vous enregistrer ceci en tant que nouveau modèle?",
+      "templateNameLabel": "Nom du modèle",
+      "templateNamePlaceholder": "Ajouter le nom du modèle"
+    },
+    "tagEditor": {
+      "entities": "Entités",
+      "questions": "Questions",
+      "oneShotAnswers": "Réponses à un seul coup",
+      "targetLanguage": "Langue cible",
+      "transcript": "Transcription"
+    },
+    "notification": {
+      "savedSummarySuccessMsg": "Le modèle a été enregistré avec succès - `{summaryName}`",
+      "savedSummaryFailureMsg": "Échec de l'enregistrement du modèle - `{summaryName}`",
+      "deletedSummarySuccessMsg": "Le modèle a été supprimé avec succès - `{summaryName}`",
+      "deletedSummaryFailureMsg": "Échec de la suppression du modèle - `{summaryName}`",
+      "clonedSummarySuccessMsg": "Le modèle a été cloné avec succès - `{summaryName}`",
+      "clonedSummaryFailureMsg": "Échec de la suppression du modèle - `{summaryName}`",
+      "publishedSummarySuccessMsg": "Le modèle a été publié avec succès - `{summaryName}`",
+      "publishedSummaryFailureMsg": "Échec de la publication du modèle - `{summaryName}`",
+      "editedSummarySuccessMsg": "Mise à jour réussie - `{summaryName}`",
+      "editedSummaryFailureMsg": "Échec de la mise à jour - `{summaryName}`",
+      "createdQuestionSuccessMsg": "Question créée avec succès - `{QName}`",
+      "createdQuestionFailureMsg": "Échec de la création de la question - `{QName}`",
+      "updatedQuestionSuccessMsg": "Question mise à jour avec succès - `{QName}`",
+      "updatedQuestionFailureMsg": "Échec de la mise à jour de la question - `{QName}`",
+      "uploadInputFileSuccess": "Téléversé avec succès",
+      "uploadInputFileFail": "Le téléchargement a échoué",
+      "allPromptFieldsAreMandatory": "Tous les champs d'invite sont obligatoires",
+      "allPromptFieldsAreMandatoryDescription": "Veuillez remplir tous les champs d'invite.",
+      "pleaseEnterValidNumber": "Veuillez entrer un numéro valide"
+    }
+  }
+}

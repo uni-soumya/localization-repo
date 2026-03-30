@@ -1,0 +1,651 @@
+{
+  "disposition": {
+    "header": {
+      "title": "Disposición",
+      "createButton": "Nueva Configuración",
+      "searchPlaceholder": "Buscar",
+      "configs": "Configuración(es)",
+      "config": "Configuración",
+      "homeIcon": "Home",
+      "uploadInputTemplateTitle": "Cargar Plantilla de Entrada",
+      "uploadTestTemplateTitle": "Cargar Plantilla de Prueba",
+      "uploadSourceFileTitle": "Cargar Archivo Fuente",
+      "templateUploadSuccessMsg": "Plantilla `{templateType}` - `{templateName}` cargada correctamente",
+      "templateUploadFailureMsg": "Error al cargar la plantilla `{templateType}` - `{templateName}`",
+      "templateDownloadFailureMsg": "Error al descargar la plantilla `{templateType}`",
+      "upload": "Cargar",
+      "emptyList": {
+        "primaryDesc": "No se encontraron disposiciones",
+        "superAdminSecondaryDesc": "Haga clic en <strong>\"+ Nueva Configuración\"</strong> para comenzar a agregar una nueva configuración,<br/>y use el ícono de más para <strong>\"Cargar Plantilla\"</strong>.",
+        "secondaryDesc": "Haga clic en <strong>\"+ Nueva Configuración\"</strong> para comenzar a agregar una nueva configuración."
+      }
+    },
+    "card": {
+      "deleteTitle": "Eliminar",
+      "globalTitle": "Global",
+      "languageTitle": "Idioma",
+      "openButtonTitle": "Abrir",
+      "assignButtonTitle": "Asignar",
+      "underTrainingStatus": "En Entrenamiento",
+      "trainedStatus": "Entrenado",
+      "trainingFailedstatus": "Entrenamiento Fallido",
+      "yesLabel": "Sí",
+      "noLabel": "No",
+      "deleteDispSuccessMsg": "Disposición eliminada correctamente - `{dispositionName} - {version}`",
+      "dispConfigInUseMsg": "No se puede eliminar la disposición - `{dispositionName} - {version}`. Ya está en uso.",
+      "deleteDispFailureMsg": "Error al eliminar la disposición - `{dispositionName} - {version}`",
+      "clearMapping": "Borrar Mapeo",
+      "clearMappingSuccessMsg": "Todos los mapeos de la organización se han borrado correctamente.",
+      "clearMappingFailureMsg": "Error al borrar los mapeos de la organización. Por favor, inténtelo de nuevo.",
+      "status": {
+        "trained": "Entrenado",
+        "completed": "Completado",
+        "under_training": "En Entrenamiento",
+        "in_progress": "En Progreso"
+      }
+    },
+    "deleteDialog": {
+      "title": "Eliminar Configuración",
+      "description": "¿Está seguro de que desea eliminar esta configuración?",
+      "confirmButton": "Sí",
+      "cancelButton": "No"
+    },
+    "createModal": {
+      "title": "Crear Nueva Disposición",
+      "editTitle": "Editar Disposición",
+      "nameLabel": "Nombre de Config.",
+      "configNameTooltip": "Solo caracteres alfanuméricos y '_'. No se permiten espacios.",
+      "namePlaceholder": "Por favor ingrese un nombre",
+      "descriptionLabel": "Descripción",
+      "descriptionPlaceholder": "Por favor agregue una descripción",
+      "partnerLabel": "Socio",
+      "partnerPlaceholder": "Seleccionar Socio",
+      "noPartnerAvailablePlaceholder": "No hay socios disponibles",
+      "accountLabel": "Cuenta",
+      "noAccountAvailablePlaceholder": "No hay cuentas disponibles",
+      "accountPlaceholder": "Seleccionar Cuenta",
+      "inputLanguageLabel": "Idioma de Llamada de Entrada",
+      "outputLanguageLabel": "Idioma de Disposición de Salida",
+      "englishDefaultLabel": "Inglés (Predeterminado)",
+      "globalLabel": "Global",
+      "createButton": "Agregar",
+      "updateButton": "Actualizar",
+      "cancelButton": "Cancelar",
+      "versionLabel": "Versión",
+      "uploadConfigFileLabel": "Cargar Archivo de Config.",
+      "downloadInputTemplateFileLabel": "Descargar Plantilla de Config.",
+      "dragAndDropToUploadLabel": "Haga clic o arrastre el archivo a esta área para cargarlo",
+      "dragAndDropToUploadHint": "Compatible con una sola carga.",
+      "fileErrorMessages": {
+        "typeError": "Tipo de archivo no válido. Por favor cargue un archivo XLS/XLSX.",
+        "empty": "El archivo está vacío o no contiene datos.",
+        "headerCount": "El archivo debe contener exactamente {headerCount} encabezados, a saber: {headerNames}.",
+        "invalidHeaders": "Encabezados no válidos encontrados: {invalidHeaderNames}",
+        "invalidFileType": "Tipo de archivo no válido. Por favor cargue un archivo XLS/XLSX.",
+        "duplicateTreeLabel": "Se encontró una disposición duplicada de {level} {label}.",
+        "invalidaData": "Información inconsistente en el archivo de configuración.\nPor favor corrija y vuelva a cargar."
+      },
+      "nameError": {
+        "required": "El nombre de configuración es obligatorio.",
+        "length": "El nombre de configuración debe tener entre 3 y 50 caracteres.",
+        "invalid": "El nombre de configuración contiene caracteres no válidos.",
+        "duplicate": "El nombre de configuración ya existe."
+      }
+    },
+    "assignModal": {
+      "assignTo": "Asignar a",
+      "orgTitle": "Organización",
+      "assigned": "Asignado",
+      "notAssigned": "No Asignado",
+      "confirmAssignment": "Confirmar Asignación",
+      "organization": "Organización",
+      "expId": "Experiencia(s)",
+      "n/a": "N/D",
+      "assignDisposition": "Asignar Disposición",
+      "selectOrgs": "Seleccionar organización(es)",
+      "orgRequiredError": "La organización es un campo obligatorio.",
+      "mappingSuccess": "Las disposiciones se han mapeado correctamente a la(s) organización(es) seleccionada(s).",
+      "sameOrgMappedError": "No se puede crear el mapeo: una o más organizaciones ya están mapeadas a otra disposición."
+    },
+    "deleteMapping": {
+      "clearMapping": "Borrar Mapeo",
+      "clearMappingTitle": "¿Desasignar Organización(es)?",
+      "clearMappingMessage": "Esto eliminará la(s) Organización(es) asignada(s) para la disposición: {disposition}.\n¿Desea continuar?",
+      "clearBtnLabel": "Desasignar"
+    },
+    "selectVersionModal": {
+      "title": "Por favor seleccione una versión",
+      "deleteTitle": "Eliminar Config.",
+      "versionLabel": "Seleccionar Versión",
+      "versionPlaceholder": "Seleccionar Versión",
+      "openButtonLabel": "Abrir",
+      "deleteButtonLabel": "Eliminar",
+      "cancelButton": "Cancelar",
+      "deleteMessage": "¿Está seguro de que desea eliminar ",
+      "versionError": {
+        "required": "La versión es obligatoria.",
+        "duplicate": "La versión ya existe."
+      }
+    },
+    "dispositionDetails": {
+      "editButtonLabel": "Editar",
+      "updateButtonLabel": "Actualizar",
+      "editDisableTooltip": "La edición de los detalles de disposición está deshabilitada actualmente. Por favor, cree una nueva configuración.",
+      "cancelButtonLabel": "Cancelar",
+      "saveAndTrainButtonLabel": "Guardar y Entrenar",
+      "downloadConfigButtonLabel": "Descargar Config.",
+      "createDispSuccessMsg": "Disposición creada correctamente - `{dispositionName}` - `{version}`",
+      "createDispFailureMsg": "Error al crear la disposición - `{dispositionName}`",
+      "updateDispSuccessMsg": "Disposición actualizada correctamente - `{dispositionName}` - `{version}`",
+      "updateDispFailedMsg": "Error al actualizar la disposición - `{dispositionName}` - `{version}`",
+      "tree": {
+        "searchPlaceholder": "Buscar"
+      },
+      "nodeDetails": {
+        "title": "Detalles de Disposición",
+        "nameLabel": "Nombre",
+        "levelLabel": "Nivel",
+        "descriptionLabel": "Descripción"
+      },
+      "configDetails": {
+        "title": "Detalles de Configuración",
+        "nameLabel": "Nombre",
+        "nameLabelPlaceholder": "Agregar Nombre de Configuración",
+        "descriptionLabel": "Descripción",
+        "descriptionLabelPlaceholder": "Por favor agregue una descripción",
+        "revertUpdate": "Revertir Actualización",
+        "partnerLabel": "Socio",
+        "accountLabel": "Cuenta",
+        "inputLanguageLabel": "Idioma de Llamada de Entrada",
+        "outputLanguageLabel": "Idioma de Disposición de Salida",
+        "versionLabel": "Versión",
+        "scopeLabel": "Alcance",
+        "sourceFileLabel": "Archivo Fuente",
+        "globalLabel": "Global",
+        "localLabel": "Local",
+        "updateButtonLabel": "Actualizar"
+      },
+      "tabs": {
+        "configureHierarchy": "Configurar Jerarquía",
+        "testToValidate": "Probar para Validar",
+        "standardDispositions": "Disposiciones Estándar",
+        "myDispositions": "Mis Disposiciones",
+        "assignments": "Asignaciones"
+      }
+    },
+    "testToValidate": {
+      "tableColumnDef": {
+        "testLabel": "Etiqueta de Prueba",
+        "noOfCalls": "Número de Llamadas",
+        "dateTime": "Fecha y Hora",
+        "processingTime": "Tiempo de Procesamiento",
+        "status": "Estado",
+        "norowDataMsg": "No se encontraron resultados de prueba",
+        "norowDataDesc": "Haga clic en `Ejecutar Prueba` para cargar un archivo XLS para pruebas",
+        "completed": "Completado",
+        "processing": "En Procesamiento",
+        "failed": "Fallido"
+      },
+      "uploadFileModal": {
+        "title": "Ejecutar Prueba",
+        "footerLabel": "Ejecutar Prueba",
+        "cancelButtonLabel": "Cancelar"
+      },
+      "notification": {
+        "downloadTestResultsErrorMsg": "Error al descargar los resultados de la prueba - `{label}`",
+        "createTestDispositionSuccessMsg": "Plantilla de disposición de prueba guardada correctamente - `{label}` ",
+        "createTestDispositionErrorMsg": "Error al crear la disposición de prueba - `{label}` ",
+        "validExcelFileErrorMsg": "Por favor cargue un archivo Excel válido",
+        "empty": "El archivo está vacío o no contiene datos.",
+        "headerCount": "El archivo debe contener exactamente {headerCount} encabezados, a saber: {headerNames}.",
+        "invalidHeaders": "Encabezados no válidos encontrados: {invalidHeaderNames}",
+        "invalidFileType": "Tipo de archivo no válido. Por favor cargue un archivo XLS/XLSX.",
+        "missingRequiredColumnsErrorMsg": "Archivo no válido: asegúrese de que todas las filas tengan SI.No y Transcripción, y que no haya filas vacías entre ellas.",
+        "exceedsTranscriptRecordsErrorMsg": "El archivo cargado supera el límite máximo de {maxRecords} registros de transcripción.",
+        "uploadedFileSizExceeded": "El tamaño del archivo cargado supera el límite máximo de {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "El turno de transcripción no es válido. Cada línea debe comenzar con 'Hablante': 'seguido del contenido'",
+        "multiplEscelSheetsErrorMsg": "Se encontraron varias hojas en el archivo Excel. Por favor cargue un archivo con una sola hoja."
+      }
+    },
+    "validation": {
+      "emptyRow": "Fila vacía detectada",
+      "whitespaceLabel": "Etiqueta con solo espacios en blanco encontrada en {level}",
+      "specialCharLabel": "La etiqueta '{label}' en {level} contiene caracteres especiales o emojis",
+      "specialCharDefinition": "La definición '{definition}' contiene caracteres especiales o emojis",
+      "duplicateLabel": "Etiqueta duplicada '{label}' encontrada en {level}",
+      "duplicatePath": "Etiqueta duplicada encontrada - `{path}`",
+      "duplicateNameError": "Nombre duplicado encontrado - `{value}`",
+      "duplicateDefinition": "La etiqueta '{label}' tiene definiciones conflictivas",
+      "missingParent": "Falta la disposición padre para {level}",
+      "emptyDispositionDefinition": "Se encontró una definición de disposición vacía."
+    }
+  },
+  "summary": {
+    "builderView": {
+      "summaryTemplatesTitle": "Constructor de Resúmenes",
+      "createButton": "Nueva Plantilla de Resumen",
+      "questionsManagerTitle": "Administrador de Preguntas",
+      "summaryTemplatesViewOption": "Plantillas de Resumen",
+      "questionsManagerViewOption": "Administrador de Preguntas",
+      "tabs": {
+        "buildSummary": "Construir Resumen",
+        "testToValidate": "Probar para Validar"
+      },
+      "templates": {
+        "uniphoreStandardTemplates": "Plantillas Estándar de Uniphore",
+        "userDefinedTemplates": "Plantillas Definidas por el Usuario"
+      },
+      "presentationFormat": {
+        "sectionBullets": "Seccional - Viñetas",
+        "sectionNumeric": "Seccional - Numérico",
+        "paragraph": "Párrafo",
+        "sectionParagraph": "Seccional - Párrafo"
+      }
+    },
+    "testTemplateView": {
+      "footer": {
+        "downloadTemplateButtonLabel": "Descargar Plantilla de Prueba",
+        "canceButtonLabel": "Cancelar"
+      },
+      "tableColumnDef": {
+        "norowDataMsg": "No se encontraron resultados",
+        "norowDataDesc": "Suelte el archivo .XLS con transcripciones o descargue la plantilla para completar y cargar",
+        "createTestSummarySuccessMsg": "Plantilla de resumen de prueba guardada correctamente - `{label}` ",
+        "createTestSummaryErrorMsg": "Error al crear el resumen de prueba - `{label}` ",
+        "retryTestSuccessMsg": "Resumen de prueba reintentado correctamente - `{label}` ",
+        "retryTestErrorMsg": "Error al reintentar el resumen de prueba - `{label}` "
+      },
+      "excelValidation": {
+        "validExcelFileErrorMsg": "Por favor cargue un archivo Excel válido",
+        "uploadCorrectFileErrorMsg": "Por favor cargue un archivo Excel",
+        "headerCount": "El archivo debe contener exactamente {headerCount} encabezados, a saber: {headerNames}",
+        "empty": "El archivo está vacío o no contiene datos.",
+        "invalidHeaders": "Encabezados no válidos encontrados: {invalidHeaderNames}",
+        "invalidFileType": "Tipo de archivo no válido. Por favor cargue un archivo XLS/XLSX.",
+        "missingRequiredColumnsErrorMsg": "Archivo no válido: asegúrese de que todas las filas tengan SI.No y Transcripción, y que no haya filas vacías entre ellas.",
+        "exceedsTranscriptRecordsErrorMsg": "El archivo cargado supera el límite máximo de {maxRecords} registros de transcripción.",
+        "uploadedFileSizExceeded": "El tamaño del archivo cargado supera el límite máximo de {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "El turno de transcripción no es válido. Cada línea debe comenzar con 'Hablante': 'seguido del contenido'",
+        "multiplEscelSheetsErrorMsg": "Se encontraron varias hojas en el archivo Excel. Por favor cargue un archivo con una sola hoja."
+      }
+    },
+    "questionsManager": {
+      "searchPlaceholder": "Buscar",
+      "questionLabel": "Etiqueta de Pregunta",
+      "questionPrompt": "Indicación",
+      "questionText": "Texto de la Pregunta",
+      "sampleOneShotAnswer": "Respuesta de Muestra de Un Solo Intento",
+      "bulkActionsLabel": "Acciones Masivas",
+      "category": "Categoría",
+      "questions": "Preguntas",
+      "selectedQuestions": "Seleccionadas",
+      "categoryOptions": {
+        "all": "Todas",
+        "standard": "Estándar",
+        "custom": "Personalizada"
+      },
+      "actions": {
+        "deleteQuestion": "Eliminar Pregunta",
+        "setAsStandard": "Establecer como Estándar",
+        "convertToCustom": "Convertir a Personalizada"
+      },
+      "bulkActions": {
+        "deleteBulkQuestions": "Eliminar Preguntas",
+        "deleteBulkMessage": "Algunas de las preguntas seleccionadas están vinculadas a plantillas y no se pueden \neliminar. \nPuede continuar con las que sean seguras de eliminar. También puede \ndeseleccionar cualquier pregunta que no desee eliminar.",
+        "deleteBulkTitle": "Eliminar Preguntas",
+        "deleteBulkConfirm": "Eliminar Preguntas"
+      },
+      "questionEdit": {
+        "title": " Detalles de la Pregunta",
+        "questionTextTooltip": "Debe ser único, de menos de 20 caracteres y sin caracteres especiales.",
+        "promptTooltip": "Limitado a 500 caracteres y no puede contener etiquetas de scripting.",
+        "sampleOneShotAnswerTooltip": "Limitado a 500 caracteres y debe ser solo texto.",
+        "questionLabelError": "La etiqueta no puede estar vacía, debe tener un máximo de 15 caracteres.",
+        "questionTextError": "El texto no puede estar vacío, debe tener un máximo de 20 caracteres.",
+        "promptError": "La indicación no puede estar vacía, debe tener un máximo de 500 caracteres.",
+        "sampleOneShotAnswerError": "La respuesta de muestra de un solo intento no puede estar vacía, debe tener un máximo de 500 caracteres.",
+        "templatesListTitle": "Plantillas Utilizadas",
+        "noTemplatesFound": "No hay plantillas utilizadas para esta pregunta",
+        "actionRequiredTextButton": "Ver Plantillas Asociadas",
+        "actionRequiredTitle": "Acción Restringida",
+        "deleteQuestionNotification": {
+          "title": "Eliminar pregunta",
+          "forbiddenMessage": "Esta pregunta no se puede eliminar ya que actualmente se usa en una o más \nplantillas. Solo se puede eliminar después de que se eliminen todas las asociaciones.",
+          "allowedMessage": "Esta pregunta no se usa en ninguna plantilla y se eliminará permanentemente. \nEsta acción no se puede deshacer. ¿Está seguro de que desea continuar?",
+          "confirmTextButton": "Eliminar Pregunta"
+        },
+        "demoteQuestionNotification": {
+          "title": "Convertir a Personalizada",
+          "forbiddenMessage": "Esta pregunta no se puede degradar ya que actualmente se usa en una o más \nplantillas. Solo se puede degradar después de que se eliminen todas las asociaciones.",
+          "allowedMessage": "Esta pregunta se convertirá en una pregunta personalizada. \nEsta acción no se puede deshacer. ¿Está seguro de que desea continuar?",
+          "confirmTextButton": "Convertir a Personalizada"
+        },
+        "promoteQuestionNotification": {
+          "title": "Convertir a Estándar",
+          "allowedMessage": "Esta pregunta se promoverá a una pregunta estándar y estará disponible \npara todos los usuarios en todas las cuentas. ¿Está seguro de que desea continuar?",
+          "confirmTextButton": "Convertir a Estándar"
+        },
+        "confirmSavingQuestion": "Esta pregunta se usa actualmente en una o más plantillas.\n\nGuardar esta pregunta la actualizará en todas las plantillas asociadas.\n\n¿Desea guardar los cambios?",
+        "confirmEditingQuestion": "Esta pregunta se usa actualmente en una o más plantillas.\n\n¿Aún desea editarla?",
+        "confirmSaveButtonLabel": "Confirmar Guardado",
+        "confirmEditTitle": "Confirmar Edición",
+        "continueLabel": "Continuar",
+        "cancelLabel": "Cancelar",
+        "processingTimeLabel": "Tiempo de Procesamiento",
+        "outputLabel": "Salida",
+        "processingData": "Procesando datos...",
+        "processing": "Procesando"
+      }
+    },
+    "card": {
+      "searchPlaceholder": "Buscar",
+      "searchCount": "Resúmenes",
+      "globalTitle": "Global",
+      "yesLabel": "Sí",
+      "noLabel": "No",
+      "doneLabel": "Hecho",
+      "inputLanguageTitle": "Idioma de Entrada",
+      "ouputLanguageTitle": "Idioma de Salida",
+      "openButtonTitle": "Abrir",
+      "deleteTitle": "Eliminar",
+      "cloneTitle": "Clonar",
+      "openButtonLabel": "Abrir",
+      "model": {
+        "open": {
+          "openHeader": "Por favor seleccione una versión",
+          "versionLabel": "Notas de Versión",
+          "versionLabelPlaceholder": "Por favor agregue notas",
+          "emptyVersionNotesPlaceholder": "No hay notas de versión disponibles"
+        },
+        "clone": {
+          "confirmationMessage": "Cree una copia de \"<strong>{ templateLabel }</strong>\" ingresando un nombre y una descripción.",
+          "cloneLabel": "Nuevo Nombre de Resumen",
+          "cloneLabelPlaceholder": "Agregar nombre de resumen",
+          "cloneDescription": "Descripción",
+          "cloneDescriptionPlaceholder": "Por favor agregue una descripción",
+          "cloneHeader": "Clonar Resumen"
+        },
+        "delete": {
+          "deleteHeader": "Eliminar Config.",
+          "deleteMessage": "¿Está seguro de que desea eliminar "
+        }
+      },
+      "publishedLabel": "Publicado",
+      "status": {
+        "draft": "Borrador",
+        "in_progress": "En Progreso",
+        "failed": "Fallido",
+        "published": "Publicado"
+      }
+    },
+    "summaryDetails": {
+      "label": "Nombre del resumen",
+      "labelPlaceholder": "Agregar Nombre de Resumen",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Por favor agregue una descripción",
+      "globalLabel": "Global",
+      "templateVersionLabel": "Versión de Plantilla",
+      "templateVersionPlaceholder": "Por favor seleccione la versión de la plantilla",
+      "partner": "Socio",
+      "partnerPlaceholder": "Por favor seleccione un socio",
+      "account": "Cuenta",
+      "accountPlaceholder": "Por favor seleccione una cuenta",
+      "selectLLM": "Seleccionar Modelo LLM",
+      "selectLLMPlaceholder": "Por favor seleccione el Modelo LLM",
+      "listOfQuestions": {
+        "listOfQuestionsLabel": "Lista de Preguntas",
+        "listOfQuestionsPlaceholder": "Buscar Preguntas",
+        "addNewQuestion": "Agregar Nueva Pregunta",
+        "addQuestion": " + Agregar",
+        "userDefinedQuestions": "Preguntas Definidas por el Usuario",
+        "noQuestionsAvailable": "No Hay Preguntas Disponibles",
+        "addQuestionPromt": {
+          "title1": "Agregar Datos",
+          "title2": "Pregunta de Prueba",
+          "backButton": "Atrás",
+          "addButton": "Agregar",
+          "questionLabel": "Etiqueta de Pregunta",
+          "questionLabelPlaceholder": "Por favor agregue la etiqueta de la pregunta",
+          "quesitonLabelTooltip": "Se muestra en tiempo de ejecución. Debe ser único, de menos de 20 caracteres y sin caracteres especiales.",
+          "question": "Pregunta",
+          "questionPlaceholder": "Por favor agregue la pregunta",
+          "instructionsForTheLlm": "Instrucciones para el LLM",
+          "instructionsForTheLlmPlaceholder": "Por favor agregue instrucciones para el LLM",
+          "sampleOneShotAnswer": "Respuesta de Muestra de Un Solo Intento",
+          "sampleOneShotAnswerPlaceholder": "Por favor agregue una respuesta de muestra de un solo intento",
+          "uniphoreStandardQuestions": "Preguntas Estándar de Uniphore",
+          "addTranscript": "Agregar Transcripción",
+          "addTranscriptPlaceholder": "Copie y pegue la transcripción",
+          "validation": {
+            "questionLabelRequired": "La etiqueta de la pregunta es obligatoria.",
+            "questionLabelLength": "La etiqueta de la pregunta debe tener entre 3 y 20 caracteres.",
+            "questionLabelInvalid": "La etiqueta de la pregunta contiene caracteres no válidos.",
+            "questionRequired": "La pregunta es obligatoria.",
+            "instructionsRequired": "Las instrucciones para el LLM son obligatorias.",
+            "sampleAnswerRequired": "La respuesta de muestra de un solo intento es obligatoria.",
+            "testQuestionRequired": "La pregunta de prueba es obligatoria.",
+            "testQuestionNameError": "Error de nombre en la pregunta de prueba.",
+            "testQuestionDuplicate": "La pregunta de prueba está duplicada."
+          }
+        },
+        "editQuestion": "Editar",
+        "editTitle": "Editar Pregunta",
+        "testingQuestion": "Probando Pregunta...",
+        "testingComplete": "Prueba Completada...",
+        "transcriptionMandatory": "La transcripción es obligatoria",
+        "sampleOneShotAnswerRequired": "La Respuesta de Muestra de Un Solo Intento es obligatoria",
+        "questionRequired": "La pregunta es obligatoria",
+        "instructionsForTheLlmRequired": "Las instrucciones para el LLM son obligatorias",
+        "questionLabelRequired": "La Etiqueta de la Pregunta es obligatoria",
+        "questionLabelLengthError": "La Etiqueta de la Pregunta debe tener 20 caracteres o menos",
+        "questionLabelSpecialCharsError": "No se permiten caracteres especiales",
+        "questionLabelUniqueError": "La Etiqueta de la Pregunta debe ser única",
+        "questionUpdatedSuccessfully": "Pregunta actualizada correctamente",
+        "questionUpdateError": "Error al actualizar la pregunta"
+      },
+      "addNewQuestions": {
+        "title": "Agregar Nuevas Preguntas",
+        "searchPlaceholder": "Buscar Preguntas",
+        "addQuestion": "Agregar Pregunta",
+        "testQuestion": "Pregunta de Prueba",
+        "addButton": "Agregar Preguntas Seleccionadas"
+      },
+      "footer": {
+        "advancedMode": "Modo Avanzado",
+        "advancedModeEnabled": "Modo avanzado habilitado",
+        "cancel": "Cancelar",
+        "saveDraftTest": "Guardar y Borrador",
+        "publish": "Publicar"
+      },
+      "summarySturcture": {
+        "styleSturcture": "Estilo y Estructura del Resumen",
+        "size": "Tamaño del Resumen",
+        "sizePlaceholder": "Por favor defina el límite de caracteres",
+        "short": "Resumen Corto",
+        "format": "Formato del Resumen",
+        "formatPlaceholder": "Por favor seleccione el formato del resumen"
+      },
+      "language": {
+        "languageLabel": "Idioma",
+        "inputLanguage": "Idioma de Entrada",
+        "inputLanguagePlaceholder": "Por favor seleccione el idioma de entrada",
+        "outputLanguage": "Idioma de Salida",
+        "outputLanguagePlaceholder": "Por favor seleccione el idioma de salida",
+        "languageError": {
+          "inputLanguageRequired": "El idioma de entrada es obligatorio.",
+          "outputLanguageRequired": "El idioma de salida es obligatorio."
+        }
+      },
+      "entities": {
+        "entitiesLabel": "Entidades",
+        "enabledEntities": "Entidades Habilitadas",
+        "entitiesToProvideByApplication": "¿Entidades a proporcionar por la aplicación?",
+        "addEntities": "Agregar Entidades",
+        "selectEntitiesPlaceholder": "Comp. de selección múltiple para Entidades",
+        "displayUndetectedEntitiesLabel": "Mostrar Etiqueta de Entidades No Detectadas"
+      },
+      "streaming": {
+        "streamingLabel": "Transmisión",
+        "streamingEnabled": "Habilitar Transmisión"
+      }
+    },
+    "tabs": {
+      "runNewTest": "Ejecutar Nueva Prueba",
+      "EditAndUpdate": "Editar y Actualizar"
+    },
+    "preview": {
+      "title": "Vista Previa del Resumen",
+      "emptyState": "Guardar para previsualizar",
+      "mockData": {
+        "callReasons": {
+          "header": "Razones de la Llamada",
+          "content": [
+            "El cliente llamó para restablecer la contraseña de su cuenta en línea.",
+            "El cliente desea agregar un familiar a la cuenta.",
+            "El cliente desea actualizar la suscripción."
+          ],
+          "shortSummary": [
+            "Tarjeta SIM robada"
+          ]
+        },
+        "agentSteps": {
+          "header": "Pasos del Agente",
+          "content": [
+            "El agente le pidió al cliente su nombre y apellido, número de póliza, contraseña antigua y nueva contraseña.",
+            "Luego el agente actualizó la contraseña antigua del cliente y le pidió la nueva contraseña.",
+            "El agente también envió al cliente un correo electrónico con todos los planes de las pólizas actuales."
+          ],
+          "shortSummary": [
+            "Nueva SIM activada, instrucciones de reemplazo emitidas"
+          ]
+        },
+        "outcome": {
+          "header": "Resultado",
+          "content": [
+            "El cliente llamó para restablecer la contraseña de su cuenta en línea.",
+            "El cliente desea agregar un familiar a la cuenta.",
+            "El cliente desea actualizar la suscripción."
+          ],
+          "shortSummary": [
+            "Reemplazo de tarjeta SIM exitoso"
+          ]
+        },
+        "customerSentiment": {
+          "header": "Sentimiento del Cliente",
+          "content": [
+            "El cliente quedó satisfecho con el resultado de la conversación."
+          ],
+          "shortSummary": [
+            "Satisfecho"
+          ]
+        },
+        "paragraphFull": "El cliente llamó para restablecer la contraseña de su cuenta en línea. El cliente desea agregar un familiar a la cuenta. El cliente desea actualizar la suscripción.<br><br>El agente le pidió al cliente su nombre y apellido, número de póliza, contraseña antigua y nueva contraseña. Luego el agente actualizó la contraseña antigua del cliente y le pidió la nueva contraseña. El agente también envió al cliente un correo electrónico con todos los planes de las pólizas actuales.<br><br>El resultado de la conversación fue que la contraseña del cliente se restableció correctamente y el agente envió al cliente un correo electrónico con todos los planes de las pólizas actuales.<br><br>El cliente quedó satisfecho con el resultado de la conversación.",
+        "paragraphShort": "El cliente llamó para restablecer la contraseña de su cuenta en línea. El cliente desea actualizar la suscripción.<br><br>El agente le pidió al cliente su nombre y apellido, número de póliza, contraseña antigua y nueva contraseña. El agente también envió al cliente un correo electrónico con todos los planes de las pólizas actuales.<br><br>El cliente quedó satisfecho con el resultado de la conversación."
+      }
+    },
+    "testSummaryBuilder": {
+      "primaryDesc": "Cargar Plantilla",
+      "secondaryDesc": "Cargue una plantilla para probar el constructor de resúmenes.",
+      "upload": "Cargar",
+      "uploadTestTemplate": "Cargar Plantilla de Prueba",
+      "downloadTestTemplate": "Descargar Plantilla de Prueba"
+    },
+    "advanceMode": {
+      "advancedMode": "Modo Avanzado",
+      "advanceModeInfo": "Use {'@'} o el menú de íconos para agregar acciones.",
+      "accessAdvancedFeaturesAndSettings": "Acceder a funciones y configuraciones avanzadas",
+      "promptConfiguration": "Configuración de Indicación",
+      "promptConfigurationDescription": "Use el menú de íconos para insertar acciones. Solo se permite una variable de Transcripción, ya sea en el Indicador del Sistema o en el Indicador del Usuario.",
+      "parametersConfiguration": "Parámetros",
+      "temperaturePrompt": "Temperatura",
+      "temperaturePromptTooltip": "Controla la creatividad; mayor = salida más variada, menor = más precisa.",
+      "seedPrompt": "Semilla",
+      "seedPromptTooltip": "Garantiza la reproducibilidad de las respuestas al usar la misma entrada.",
+      "toppPrompt": "Top-p",
+      "toppPromptTooltip": "Elige entre los tokens dentro de la masa de probabilidad más pequeña por encima de p (muestreo de núcleo).",
+      "topkPrompt": "Top-k",
+      "topkPromptTooltip": "Elige solo entre los k tokens más probables.",
+      "maxTokensPrompt": "Tokens Máximos",
+      "maxTokensPromptTooltip": "Define la longitud máxima de salida; vinculado al Tamaño del Resumen.",
+      "systemPrompt": "Indicador del Sistema",
+      "systemPromptTooltip": "Instrucciones principales que definen el comportamiento y el rol general del modelo.",
+      "EnterSystemPromt": "Ingrese el indicador del sistema",
+      "UserPrompt": "Indicador del Usuario",
+      "userPromptTooltip": "Solicitud o consulta principal del usuario a la que responde el modelo.",
+      "EnterUserPromt": "Ingrese el indicador del usuario",
+      "Guidelines": "Directrices",
+      "guidelinesPromptTooltip": "Reglas adicionales para aplicar el formato, tono o estilo en el resumen.",
+      "EnterGuidelinesPromt": "Ingrese las directrices",
+      "OneShotExample": "Ejemplo de Un Solo Intento",
+      "oneShotPromptTooltip": "Un par de entrada-salida de muestra para guiar la respuesta del modelo (opcional).",
+      "EnterShotExample": "Ingrese el ejemplo de un solo intento"
+    },
+    "emptyList": {
+      "primaryDesc": "No se encontraron plantillas de resumen",
+      "secondaryDesc": "Haga clic en \"Agregar Nueva Plantilla de Resumen\" para comenzar a agregar nuevas plantillas, y use el ícono de más para \"Cargar Plantilla\"."
+    },
+    "tooltip": {
+      "labelTooltip": "Debe ser único; solo caracteres alfanuméricos y '_'. No se permiten espacios.",
+      "descriptionTooltip": "Solo para fines de visualización. Esto no forma parte de las instrucciones para el Modelo.",
+      "summarySize": "Por favor especifique el límite aproximado de caracteres del resumen"
+    },
+    "common": {
+      "AddBtnLabel": "Agregar",
+      "deleteBtnLabel": "Eliminar",
+      "cloneBtnLabel": "Clonar",
+      "saveButton": "Guardar",
+      "cancelButton": "Cancelar",
+      "test": "Probar",
+      "resettoDefault": "Restablecer a Predeterminado",
+      "tableTitle": "Configuración de Tabla",
+      "rowDensityText": "Densidad de Fila",
+      "largeRowDensity": "Grande",
+      "compactRowDensity": "Compacto"
+    },
+    "validation": {
+      "templateName": {
+        "required": "El nombre del resumen es requerido",
+        "maxLength": "El nombre del resumen debe tener como máximo 20 caracteres",
+        "noSpaces": "El nombre del resumen no puede contener espacios",
+        "invalidChars": "El nombre del resumen solo puede contener letras, números y guiones bajos",
+        "notUnique": "El nombre del resumen debe ser único"
+      }
+    },
+    "publishModal": {
+      "title": "Publicar",
+      "publishButton": "Publicar",
+      "versionNotesLabel": "Notas de la versión",
+      "saveAsNewTemplateLabel": "¿Desea guardar esto como una nueva plantilla?",
+      "templateNameLabel": "Nombre de la plantilla",
+      "templateNamePlaceholder": "Agregar nombre de plantilla"
+    },
+    "tagEditor": {
+      "entities": "Entidades",
+      "questions": "Preguntas",
+      "oneShotAnswers": "Respuestas One Shot",
+      "targetLanguage": "Idioma de destino",
+      "transcript": "Transcripción"
+    },
+    "notification": {
+      "savedSummarySuccessMsg": "Plantilla guardada correctamente - `{summaryName}`",
+      "savedSummaryFailureMsg": "Error al guardar la plantilla - `{summaryName}`",
+      "deletedSummarySuccessMsg": "Plantilla eliminada correctamente - `{summaryName}`",
+      "deletedSummaryFailureMsg": "Error al eliminar la plantilla - `{summaryName}`",
+      "clonedSummarySuccessMsg": "Plantilla clonada correctamente - `{summaryName}`",
+      "clonedSummaryFailureMsg": "Error al eliminar la plantilla - `{summaryName}`",
+      "publishedSummarySuccessMsg": "Plantilla publicada correctamente - `{summaryName}`",
+      "publishedSummaryFailureMsg": "Error al publicar la plantilla - `{summaryName}`",
+      "editedSummarySuccessMsg": "Actualizado correctamente - `{summaryName}`",
+      "editedSummaryFailureMsg": "Error al actualizar - `{summaryName}`",
+      "createdQuestionSuccessMsg": "Pregunta creada correctamente - `{QName}`",
+      "createdQuestionFailureMsg": "Error al crear la pregunta - `{QName}`",
+      "updatedQuestionSuccessMsg": "Pregunta actualizada correctamente - `{QName}`",
+      "updatedQuestionFailureMsg": "Error al actualizar la pregunta - `{QName}`",
+      "uploadInputFileSuccess": "Cargado correctamente",
+      "uploadInputFileFail": "La carga falló",
+      "allPromptFieldsAreMandatory": "Todos los campos de indicación son obligatorios",
+      "allPromptFieldsAreMandatoryDescription": "Por favor complete todos los campos de indicación.",
+      "pleaseEnterValidNumber": "Por favor ingrese un número válido"
+    }
+  }
+}

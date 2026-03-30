@@ -1,0 +1,38 @@
+{
+  "OVERLAY_CONTAINER":  {
+    "POLICY": "Policy",
+    "POLICIES": "Policies"
+  },
+  "LOADING_INDICATOR":{
+    "LOADING":"Loading..."
+  },
+  "NO_DATA":{
+    "NO_RESULT_FOUND":"No Results Found"
+  },
+  "LASTUPDATED_COMPONENT":{
+    "LASTUPDATED_TEXT":"Last Updated on"
+  },
+  "MENU_COMPONENT":{
+    "CONVERSATION_TRACKER":"Conversation Tracker",
+    "POLICIES_VIEW":"Policies View"
+  },
+  "STATISTICS_TABLE":{
+    "TOTAL_POLICIES": "Total Policies",
+    "EFFECTIVE_POLICIES": "Effective",
+    "NEW_POLICIES": "New",
+    "DISABLED_POLICIES": "Disabled",
+    "EXPIRED_POLICIES": "Expired",
+    "FULLY_EFFECTIVE_POLICIES": "Fully Effective",
+    "PARTIALLY_EFFECTIVE_POLICIES": "Partially Effective",
+    "NOT_EFFECTIVE_POLICIES": "Not Effective"
+  },
+  "DASHBOARD":{
+    "DATE_RANGE_TOOLTIP":"Data is available only from April 1st 2025, as metrics collection was enabled starting on that date.",
+    "CONVERSATIONTRACKER":{
+        "SUCCESSFUL_POLICY_EXECUTIONS":"Number of Successful policy executions",
+        "UNSUCCESSFUL_POLICY_EXECUTIONS":"Number of UnSuccessful policy executions",
+        "PERMITTED_DEVIATIONS":"Permitted Deviations",
+        "TOTAL_CONVERSATIONS":"Total number of new conversations within specified date range"
+    }
+  }
+}

@@ -1,0 +1,651 @@
+{
+  "disposition": {
+    "header": {
+      "title": "Disposizione",
+      "createButton": "Nuova Configurazione",
+      "searchPlaceholder": "Cerca",
+      "configs": "Configurazione/i",
+      "config": "Configurazione",
+      "homeIcon": "Home",
+      "uploadInputTemplateTitle": "Carica Modello di Input",
+      "uploadTestTemplateTitle": "Carica Modello di Test",
+      "uploadSourceFileTitle": "Carica File Sorgente",
+      "templateUploadSuccessMsg": "Modello `{templateType}` - `{templateName}` caricato con successo",
+      "templateUploadFailureMsg": "Caricamento del modello `{templateType}` - `{templateName}` non riuscito",
+      "templateDownloadFailureMsg": "Download del modello `{templateType}` non riuscito",
+      "upload": "Carica",
+      "emptyList": {
+        "primaryDesc": "Nessuna Disposizione Trovata",
+        "superAdminSecondaryDesc": "Fare clic su <strong>\"+ Nuova Configurazione\"</strong> per iniziare ad aggiungere una nuova configurazione,<br/>e usare l'icona altro per <strong>\"Carica Modello\"</strong>.",
+        "secondaryDesc": "Fare clic su <strong>\"+ Nuova Configurazione\"</strong> per iniziare ad aggiungere una nuova configurazione."
+      }
+    },
+    "card": {
+      "deleteTitle": "Elimina",
+      "globalTitle": "Globale",
+      "languageTitle": "Lingua",
+      "openButtonTitle": "Apri",
+      "assignButtonTitle": "Assegna",
+      "underTrainingStatus": "In Addestramento",
+      "trainedStatus": "Addestrato",
+      "trainingFailedstatus": "Addestramento Fallito",
+      "yesLabel": "Sì",
+      "noLabel": "No",
+      "deleteDispSuccessMsg": "Disposizione eliminata con successo - `{dispositionName} - {version}`",
+      "dispConfigInUseMsg": "Impossibile eliminare la disposizione - `{dispositionName} - {version}`. Già in uso.",
+      "deleteDispFailureMsg": "Eliminazione della disposizione non riuscita - `{dispositionName} - {version}`",
+      "clearMapping": "Cancella Mappatura",
+      "clearMappingSuccessMsg": "Tutte le mappature dell'organizzazione sono state cancellate con successo.",
+      "clearMappingFailureMsg": "Cancellazione delle mappature dell'organizzazione non riuscita. Riprovare.",
+      "status": {
+        "trained": "Addestrato",
+        "completed": "Completato",
+        "under_training": "In Addestramento",
+        "in_progress": "In Corso"
+      }
+    },
+    "deleteDialog": {
+      "title": "Elimina Configurazione",
+      "description": "Sei sicuro di voler eliminare questa configurazione?",
+      "confirmButton": "Sì",
+      "cancelButton": "No"
+    },
+    "createModal": {
+      "title": "Crea Nuova Disposizione",
+      "editTitle": "Modifica Disposizione",
+      "nameLabel": "Nome Config.",
+      "configNameTooltip": "Solo caratteri alfanumerici e '_'. Non sono consentiti spazi.",
+      "namePlaceholder": "Inserire un nome",
+      "descriptionLabel": "Descrizione",
+      "descriptionPlaceholder": "Aggiungere una descrizione",
+      "partnerLabel": "Partner",
+      "partnerPlaceholder": "Seleziona Partner",
+      "noPartnerAvailablePlaceholder": "Nessun partner disponibile",
+      "accountLabel": "Account",
+      "noAccountAvailablePlaceholder": "Nessun account disponibile",
+      "accountPlaceholder": "Seleziona Account",
+      "inputLanguageLabel": "Lingua della Chiamata in Entrata",
+      "outputLanguageLabel": "Lingua della Disposizione in Uscita",
+      "englishDefaultLabel": "Inglese (Predefinito)",
+      "globalLabel": "Globale",
+      "createButton": "Aggiungi",
+      "updateButton": "Aggiorna",
+      "cancelButton": "Annulla",
+      "versionLabel": "Versione",
+      "uploadConfigFileLabel": "Carica File di Config.",
+      "downloadInputTemplateFileLabel": "Scarica Modello di Config.",
+      "dragAndDropToUploadLabel": "Fare clic o trascinare il file in quest'area per caricarlo",
+      "dragAndDropToUploadHint": "Supporta un singolo caricamento.",
+      "fileErrorMessages": {
+        "typeError": "Tipo di file non valido. Caricare un file XLS/XLSX.",
+        "empty": "Il file è vuoto o non contiene dati.",
+        "headerCount": "Il file deve contenere esattamente {headerCount} intestazioni, ovvero: {headerNames}.",
+        "invalidHeaders": "Intestazioni non valide trovate: {invalidHeaderNames}",
+        "invalidFileType": "Tipo di file non valido. Caricare un file XLS/XLSX.",
+        "duplicateTreeLabel": "Trovata disposizione {level} duplicata {label}.",
+        "invalidaData": "Informazioni incoerenti nel file di configurazione.\nCorreggere e caricare nuovamente."
+      },
+      "nameError": {
+        "required": "Il nome della configurazione è obbligatorio.",
+        "length": "Il nome della configurazione deve essere compreso tra 3 e 50 caratteri.",
+        "invalid": "Il nome della configurazione contiene caratteri non validi.",
+        "duplicate": "Il nome della configurazione esiste già."
+      }
+    },
+    "assignModal": {
+      "assignTo": "Assegna a",
+      "orgTitle": "Org",
+      "assigned": "Assegnato",
+      "notAssigned": "Non Assegnato",
+      "confirmAssignment": "Conferma Assegnazione",
+      "organization": "Organizzazione",
+      "expId": "Esperienza/e",
+      "n/a": "N/D",
+      "assignDisposition": "Assegna Disposizione",
+      "selectOrgs": "Seleziona organizzazione/i",
+      "orgRequiredError": "L'organizzazione è un campo obbligatorio.",
+      "mappingSuccess": "Le disposizioni sono state mappate con successo alle organizzazioni selezionate.",
+      "sameOrgMappedError": "Impossibile creare la mappatura: una o più organizzazioni sono già mappate a un'altra disposizione."
+    },
+    "deleteMapping": {
+      "clearMapping": "Cancella Mappatura",
+      "clearMappingTitle": "Annullare l'assegnazione delle Organizzazioni?",
+      "clearMappingMessage": "Questo rimuoverà le Organizzazioni assegnate per la disposizione: {disposition}.\nVuoi procedere?",
+      "clearBtnLabel": "Annulla Assegnazione"
+    },
+    "selectVersionModal": {
+      "title": "Seleziona versione",
+      "deleteTitle": "Elimina Config.",
+      "versionLabel": "Seleziona Versione",
+      "versionPlaceholder": "Seleziona Versione",
+      "openButtonLabel": "Apri",
+      "deleteButtonLabel": "Elimina",
+      "cancelButton": "Annulla",
+      "deleteMessage": "Sei sicuro di voler eliminare ",
+      "versionError": {
+        "required": "La versione è obbligatoria.",
+        "duplicate": "La versione esiste già."
+      }
+    },
+    "dispositionDetails": {
+      "editButtonLabel": "Modifica",
+      "updateButtonLabel": "Aggiorna",
+      "editDisableTooltip": "La modifica dei dettagli della disposizione è attualmente disabilitata. Creare una nuova configurazione.",
+      "cancelButtonLabel": "Annulla",
+      "saveAndTrainButtonLabel": "Salva e Addestra",
+      "downloadConfigButtonLabel": "Scarica Config.",
+      "createDispSuccessMsg": "Disposizione creata con successo - `{dispositionName}` - `{version}`",
+      "createDispFailureMsg": "Creazione della disposizione non riuscita - `{dispositionName}`",
+      "updateDispSuccessMsg": "Disposizione aggiornata con successo - `{dispositionName}` - `{version}`",
+      "updateDispFailedMsg": "Aggiornamento della disposizione non riuscito - `{dispositionName}` - `{version}`",
+      "tree": {
+        "searchPlaceholder": "Cerca"
+      },
+      "nodeDetails": {
+        "title": "Dettagli Disposizione",
+        "nameLabel": "Nome",
+        "levelLabel": "Livello",
+        "descriptionLabel": "Descrizione"
+      },
+      "configDetails": {
+        "title": "Dettagli Configurazione",
+        "nameLabel": "Nome",
+        "nameLabelPlaceholder": "Aggiungi Nome Configurazione",
+        "descriptionLabel": "Descrizione",
+        "descriptionLabelPlaceholder": "Aggiungere una descrizione",
+        "revertUpdate": "Ripristina Aggiornamento",
+        "partnerLabel": "Partner",
+        "accountLabel": "Account",
+        "inputLanguageLabel": "Lingua della Chiamata in Entrata",
+        "outputLanguageLabel": "Lingua della Disposizione in Uscita",
+        "versionLabel": "Versione",
+        "scopeLabel": "Ambito",
+        "sourceFileLabel": "File Sorgente",
+        "globalLabel": "Globale",
+        "localLabel": "Locale",
+        "updateButtonLabel": "Aggiorna"
+      },
+      "tabs": {
+        "configureHierarchy": "Configura Gerarchia",
+        "testToValidate": "Testa per Validare",
+        "standardDispositions": "Disposizioni Standard",
+        "myDispositions": "Le Mie Disposizioni",
+        "assignments": "Assegnazioni"
+      }
+    },
+    "testToValidate": {
+      "tableColumnDef": {
+        "testLabel": "Etichetta Test",
+        "noOfCalls": "Numero di Chiamate",
+        "dateTime": "Data e Ora",
+        "processingTime": "Tempo di Elaborazione",
+        "status": "Stato",
+        "norowDataMsg": "Nessun Risultato di Test Trovato",
+        "norowDataDesc": "Fare clic su `Esegui Test` per caricare un file XLS per i test",
+        "completed": "Completato",
+        "processing": "In Elaborazione",
+        "failed": "Fallito"
+      },
+      "uploadFileModal": {
+        "title": "Esegui Test",
+        "footerLabel": "Esegui Test",
+        "cancelButtonLabel": "Annulla"
+      },
+      "notification": {
+        "downloadTestResultsErrorMsg": "Download dei risultati del test non riuscito - `{label}`",
+        "createTestDispositionSuccessMsg": "Modello di disposizione di test salvato con successo - `{label}` ",
+        "createTestDispositionErrorMsg": "Creazione della disposizione di test non riuscita - `{label}` ",
+        "validExcelFileErrorMsg": "Caricare un file Excel valido",
+        "empty": "Il file è vuoto o non contiene dati.",
+        "headerCount": "Il file deve contenere esattamente {headerCount} intestazioni, ovvero: {headerNames}.",
+        "invalidHeaders": "Intestazioni non valide trovate: {invalidHeaderNames}",
+        "invalidFileType": "Tipo di file non valido. Caricare un file XLS/XLSX.",
+        "missingRequiredColumnsErrorMsg": "File non valido: assicurarsi che tutte le righe abbiano sia SI.No che Trascrizione e che non ci siano righe vuote tra di esse.",
+        "exceedsTranscriptRecordsErrorMsg": "Il file caricato supera il limite massimo di {maxRecords} record di trascrizione.",
+        "uploadedFileSizExceeded": "La dimensione del file caricato supera il limite massimo di {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "Il turno di trascrizione non è valido. Ogni riga deve iniziare con 'Relatore': 'seguito dal contenuto'",
+        "multiplEscelSheetsErrorMsg": "Trovati più fogli nel file Excel. Caricare un file con un singolo foglio."
+      }
+    },
+    "validation": {
+      "emptyRow": "Riga vuota rilevata",
+      "whitespaceLabel": "Etichetta con solo spazi trovata in {level}",
+      "specialCharLabel": "L'etichetta '{label}' in {level} contiene caratteri speciali o emoji",
+      "specialCharDefinition": "La definizione '{definition}' contiene caratteri speciali o emoji",
+      "duplicateLabel": "Etichetta duplicata '{label}' trovata in {level}",
+      "duplicatePath": "Etichetta duplicata trovata - `{path}`",
+      "duplicateNameError": "Nome duplicato trovato - `{value}`",
+      "duplicateDefinition": "L'etichetta '{label}' ha definizioni in conflitto",
+      "missingParent": "Disposizione padre mancante per {level}",
+      "emptyDispositionDefinition": "Trovata definizione di disposizione vuota."
+    }
+  },
+  "summary": {
+    "builderView": {
+      "summaryTemplatesTitle": "Costruttore di Riepilogi",
+      "createButton": "Nuovo Modello di Riepilogo",
+      "questionsManagerTitle": "Gestore Domande",
+      "summaryTemplatesViewOption": "Modelli di Riepilogo",
+      "questionsManagerViewOption": "Gestore Domande",
+      "tabs": {
+        "buildSummary": "Crea Riepilogo",
+        "testToValidate": "Testa per Validare"
+      },
+      "templates": {
+        "uniphoreStandardTemplates": "Modelli Standard Uniphore",
+        "userDefinedTemplates": "Modelli Definiti dall'Utente"
+      },
+      "presentationFormat": {
+        "sectionBullets": "Sezionale - Elenchi Puntati",
+        "sectionNumeric": "Sezionale - Numerico",
+        "paragraph": "Paragrafo",
+        "sectionParagraph": "Sezionale - Paragrafo"
+      }
+    },
+    "testTemplateView": {
+      "footer": {
+        "downloadTemplateButtonLabel": "Scarica Modello di Test",
+        "canceButtonLabel": "Annulla"
+      },
+      "tableColumnDef": {
+        "norowDataMsg": "Nessun Risultato Trovato",
+        "norowDataDesc": "Rilascia il file .XLS con le trascrizioni o scarica il modello da compilare e caricare",
+        "createTestSummarySuccessMsg": "Modello di riepilogo di test salvato con successo - `{label}` ",
+        "createTestSummaryErrorMsg": "Creazione del riepilogo di test non riuscita - `{label}` ",
+        "retryTestSuccessMsg": "Riepilogo di test riprovato con successo - `{label}` ",
+        "retryTestErrorMsg": "Nuovo tentativo del riepilogo di test non riuscito - `{label}` "
+      },
+      "excelValidation": {
+        "validExcelFileErrorMsg": "Caricare un file Excel valido",
+        "uploadCorrectFileErrorMsg": "Caricare un file Excel",
+        "headerCount": "Il file deve contenere esattamente {headerCount} intestazioni, ovvero: {headerNames}",
+        "empty": "Il file è vuoto o non contiene dati.",
+        "invalidHeaders": "Intestazioni non valide trovate: {invalidHeaderNames}",
+        "invalidFileType": "Tipo di file non valido. Caricare un file XLS/XLSX.",
+        "missingRequiredColumnsErrorMsg": "File non valido: assicurarsi che tutte le righe abbiano sia SI.No che Trascrizione e che non ci siano righe vuote tra di esse.",
+        "exceedsTranscriptRecordsErrorMsg": "Il file caricato supera il limite massimo di {maxRecords} record di trascrizione.",
+        "uploadedFileSizExceeded": "La dimensione del file caricato supera il limite massimo di {maxFileSize} MB.",
+        "transcriptTurnNotValidErrorMsg": "Il turno di trascrizione non è valido. Ogni riga deve iniziare con 'Relatore': 'seguito dal contenuto'",
+        "multiplEscelSheetsErrorMsg": "Trovati più fogli nel file Excel. Caricare un file con un singolo foglio."
+      }
+    },
+    "questionsManager": {
+      "searchPlaceholder": "Cerca",
+      "questionLabel": "Etichetta Domanda",
+      "questionPrompt": "Prompt",
+      "questionText": "Testo della Domanda",
+      "sampleOneShotAnswer": "Risposta di Esempio One-Shot",
+      "bulkActionsLabel": "Azioni in Blocco",
+      "category": "Categoria",
+      "questions": "Domande",
+      "selectedQuestions": "Selezionate",
+      "categoryOptions": {
+        "all": "Tutte",
+        "standard": "Standard",
+        "custom": "Personalizzata"
+      },
+      "actions": {
+        "deleteQuestion": "Elimina Domanda",
+        "setAsStandard": "Imposta come Standard",
+        "convertToCustom": "Converti in Personalizzata"
+      },
+      "bulkActions": {
+        "deleteBulkQuestions": "Elimina Domande",
+        "deleteBulkMessage": "Alcune delle domande selezionate sono collegate a modelli e non possono \nessere eliminate. \nÈ possibile procedere con quelle che possono essere eliminate in sicurezza. È anche possibile \ndeselezionare qualsiasi domanda che non si desidera eliminare.",
+        "deleteBulkTitle": "Elimina Domande",
+        "deleteBulkConfirm": "Elimina Domande"
+      },
+      "questionEdit": {
+        "title": " Dettagli Domanda",
+        "questionTextTooltip": "Deve essere unico, di meno di 20 caratteri e senza caratteri speciali.",
+        "promptTooltip": "Limitato a 500 caratteri e non può contenere tag di scripting.",
+        "sampleOneShotAnswerTooltip": "Limitato a 500 caratteri e deve essere solo testo.",
+        "questionLabelError": "L'etichetta non può essere vuota, deve essere al massimo di 15 caratteri.",
+        "questionTextError": "Il testo non può essere vuoto, deve essere al massimo di 20 caratteri.",
+        "promptError": "Il prompt non può essere vuoto, deve essere al massimo di 500 caratteri.",
+        "sampleOneShotAnswerError": "La risposta di esempio one-shot non può essere vuota, deve essere al massimo di 500 caratteri.",
+        "templatesListTitle": "Modelli Utilizzati",
+        "noTemplatesFound": "Nessun modello utilizzato per questa domanda",
+        "actionRequiredTextButton": "Visualizza Modelli Associati",
+        "actionRequiredTitle": "Azione Limitata",
+        "deleteQuestionNotification": {
+          "title": "Elimina domanda",
+          "forbiddenMessage": "Questa domanda non può essere eliminata in quanto è attualmente utilizzata in uno o più \nmodelli. Può essere eliminata solo dopo che tutte le associazioni sono state rimosse.",
+          "allowedMessage": "Questa domanda non è utilizzata in nessun modello e verrà eliminata definitivamente. \nQuesta azione non può essere annullata. Sei sicuro di voler continuare?",
+          "confirmTextButton": "Elimina Domanda"
+        },
+        "demoteQuestionNotification": {
+          "title": "Converti in Personalizzata",
+          "forbiddenMessage": "Questa domanda non può essere declassata in quanto è attualmente utilizzata in uno o più \nmodelli. Può essere declassata solo dopo che tutte le associazioni sono state rimosse.",
+          "allowedMessage": "Questa domanda verrà convertita in una domanda personalizzata. \nQuesta azione non può essere annullata. Sei sicuro di voler continuare?",
+          "confirmTextButton": "Converti in Personalizzata"
+        },
+        "promoteQuestionNotification": {
+          "title": "Converti in Standard",
+          "allowedMessage": "Questa domanda verrà promossa a domanda standard e sarà disponibile \nper tutti gli utenti su tutti gli account. Sei sicuro di voler continuare?",
+          "confirmTextButton": "Converti in Standard"
+        },
+        "confirmSavingQuestion": "Questa domanda è attualmente utilizzata in uno o più modelli.\n\nSalvare questa domanda la aggiornerà in tutti i modelli associati.\n\nVuoi salvare le modifiche?",
+        "confirmEditingQuestion": "Questa domanda è attualmente utilizzata in uno o più modelli.\n\nVuoi comunque modificarla?",
+        "confirmSaveButtonLabel": "Conferma Salvataggio",
+        "confirmEditTitle": "Conferma Modifica",
+        "continueLabel": "Continua",
+        "cancelLabel": "Annulla",
+        "processingTimeLabel": "Tempo di Elaborazione",
+        "outputLabel": "Output",
+        "processingData": "Elaborazione dati...",
+        "processing": "Elaborazione"
+      }
+    },
+    "card": {
+      "searchPlaceholder": "Cerca",
+      "searchCount": "Riepiloghi",
+      "globalTitle": "Globale",
+      "yesLabel": "Sì",
+      "noLabel": "No",
+      "doneLabel": "Fatto",
+      "inputLanguageTitle": "Lingua di Input",
+      "ouputLanguageTitle": "Lingua di Output",
+      "openButtonTitle": "Apri",
+      "deleteTitle": "Elimina",
+      "cloneTitle": "Clona",
+      "openButtonLabel": "Apri",
+      "model": {
+        "open": {
+          "openHeader": "Seleziona versione",
+          "versionLabel": "Note di Versione",
+          "versionLabelPlaceholder": "Aggiungere note",
+          "emptyVersionNotesPlaceholder": "Nessuna nota di versione disponibile"
+        },
+        "clone": {
+          "confirmationMessage": "Crea una copia di \"<strong>{ templateLabel }</strong>\" inserendo un nome e una descrizione.",
+          "cloneLabel": "Nuovo Nome Riepilogo",
+          "cloneLabelPlaceholder": "Aggiungi nome riepilogo",
+          "cloneDescription": "Descrizione",
+          "cloneDescriptionPlaceholder": "Aggiungere una descrizione",
+          "cloneHeader": "Clona Riepilogo"
+        },
+        "delete": {
+          "deleteHeader": "Elimina Config.",
+          "deleteMessage": "Sei sicuro di voler eliminare "
+        }
+      },
+      "publishedLabel": "Pubblicato",
+      "status": {
+        "draft": "Bozza",
+        "in_progress": "In Corso",
+        "failed": "Fallito",
+        "published": "Pubblicato"
+      }
+    },
+    "summaryDetails": {
+      "label": "Nome riepilogo",
+      "labelPlaceholder": "Aggiungi Nome Riepilogo",
+      "description": "Descrizione",
+      "descriptionPlaceholder": "Aggiungere una descrizione",
+      "globalLabel": "Globale",
+      "templateVersionLabel": "Versione Modello",
+      "templateVersionPlaceholder": "Selezionare la versione del modello",
+      "partner": "Partner",
+      "partnerPlaceholder": "Selezionare un partner",
+      "account": "Account",
+      "accountPlaceholder": "Selezionare un account",
+      "selectLLM": "Seleziona Modello LLM",
+      "selectLLMPlaceholder": "Selezionare il Modello LLM",
+      "listOfQuestions": {
+        "listOfQuestionsLabel": "Elenco Domande",
+        "listOfQuestionsPlaceholder": "Cerca Domande",
+        "addNewQuestion": "Aggiungi Nuova Domanda",
+        "addQuestion": " + Aggiungi",
+        "userDefinedQuestions": "Domande Definite dall'Utente",
+        "noQuestionsAvailable": "Nessuna Domanda Disponibile",
+        "addQuestionPromt": {
+          "title1": "Aggiungi Dati",
+          "title2": "Domanda di Test",
+          "backButton": "Indietro",
+          "addButton": "Aggiungi",
+          "questionLabel": "Etichetta Domanda",
+          "questionLabelPlaceholder": "Aggiungere l'etichetta della domanda",
+          "quesitonLabelTooltip": "Mostrato in fase di esecuzione. Deve essere unico, di meno di 20 caratteri e senza caratteri speciali.",
+          "question": "Domanda",
+          "questionPlaceholder": "Aggiungere la domanda",
+          "instructionsForTheLlm": "Istruzioni per il LLM",
+          "instructionsForTheLlmPlaceholder": "Aggiungere istruzioni per il LLM",
+          "sampleOneShotAnswer": "Risposta di Esempio One-Shot",
+          "sampleOneShotAnswerPlaceholder": "Aggiungere una risposta di esempio one-shot",
+          "uniphoreStandardQuestions": "Domande Standard Uniphore",
+          "addTranscript": "Aggiungi Trascrizione",
+          "addTranscriptPlaceholder": "Copia e incolla la trascrizione",
+          "validation": {
+            "questionLabelRequired": "L'etichetta della domanda è obbligatoria.",
+            "questionLabelLength": "L'etichetta della domanda deve essere compresa tra 3 e 20 caratteri.",
+            "questionLabelInvalid": "L'etichetta della domanda contiene caratteri non validi.",
+            "questionRequired": "La domanda è obbligatoria.",
+            "instructionsRequired": "Le istruzioni per il LLM sono obbligatorie.",
+            "sampleAnswerRequired": "La risposta di esempio one-shot è obbligatoria.",
+            "testQuestionRequired": "La domanda di test è obbligatoria.",
+            "testQuestionNameError": "Errore nel nome della domanda di test.",
+            "testQuestionDuplicate": "La domanda di test è duplicata."
+          }
+        },
+        "editQuestion": "Modifica",
+        "editTitle": "Modifica Domanda",
+        "testingQuestion": "Test Domanda in corso...",
+        "testingComplete": "Test Completato...",
+        "transcriptionMandatory": "La trascrizione è obbligatoria",
+        "sampleOneShotAnswerRequired": "La Risposta di Esempio One-Shot è obbligatoria",
+        "questionRequired": "La domanda è obbligatoria",
+        "instructionsForTheLlmRequired": "Le istruzioni per il LLM sono obbligatorie",
+        "questionLabelRequired": "L'Etichetta della Domanda è obbligatoria",
+        "questionLabelLengthError": "L'Etichetta della Domanda deve essere di 20 caratteri o meno",
+        "questionLabelSpecialCharsError": "I caratteri speciali non sono consentiti",
+        "questionLabelUniqueError": "L'Etichetta della Domanda deve essere unica",
+        "questionUpdatedSuccessfully": "Domanda aggiornata con successo",
+        "questionUpdateError": "Errore durante l'aggiornamento della domanda"
+      },
+      "addNewQuestions": {
+        "title": "Aggiungi Nuove Domande",
+        "searchPlaceholder": "Cerca Domande",
+        "addQuestion": "Aggiungi Domanda",
+        "testQuestion": "Domanda di Test",
+        "addButton": "Aggiungi Domande Selezionate"
+      },
+      "footer": {
+        "advancedMode": "Modalità Avanzata",
+        "advancedModeEnabled": "Modalità avanzata abilitata",
+        "cancel": "Annulla",
+        "saveDraftTest": "Salva e Bozza",
+        "publish": "Pubblica"
+      },
+      "summarySturcture": {
+        "styleSturcture": "Stile e Struttura del Riepilogo",
+        "size": "Dimensione Riepilogo",
+        "sizePlaceholder": "Definire il limite di caratteri",
+        "short": "Riepilogo Breve",
+        "format": "Formato Riepilogo",
+        "formatPlaceholder": "Selezionare il formato del riepilogo"
+      },
+      "language": {
+        "languageLabel": "Lingua",
+        "inputLanguage": "Lingua di Input",
+        "inputLanguagePlaceholder": "Selezionare la lingua di input",
+        "outputLanguage": "Lingua di Output",
+        "outputLanguagePlaceholder": "Selezionare la lingua di output",
+        "languageError": {
+          "inputLanguageRequired": "La lingua di input è obbligatoria.",
+          "outputLanguageRequired": "La lingua di output è obbligatoria."
+        }
+      },
+      "entities": {
+        "entitiesLabel": "Entità",
+        "enabledEntities": "Entità Abilitate",
+        "entitiesToProvideByApplication": "Entità da fornire dall'applicazione?",
+        "addEntities": "Aggiungi Entità",
+        "selectEntitiesPlaceholder": "Comp. selezione multipla per Entità",
+        "displayUndetectedEntitiesLabel": "Mostra Etichetta Entità Non Rilevate"
+      },
+      "streaming": {
+        "streamingLabel": "Streaming",
+        "streamingEnabled": "Abilita Streaming"
+      }
+    },
+    "tabs": {
+      "runNewTest": "Esegui Nuovo Test",
+      "EditAndUpdate": "Modifica e Aggiorna"
+    },
+    "preview": {
+      "title": "Anteprima Riepilogo",
+      "emptyState": "Salva per visualizzare l'anteprima",
+      "mockData": {
+        "callReasons": {
+          "header": "Motivi della Chiamata",
+          "content": [
+            "Il cliente ha chiamato per reimpostare la password del suo account online.",
+            "Il cliente desidera aggiungere un familiare all'account.",
+            "Il cliente desidera aggiornare l'abbonamento."
+          ],
+          "shortSummary": [
+            "SIM rubata"
+          ]
+        },
+        "agentSteps": {
+          "header": "Passaggi dell'Agente",
+          "content": [
+            "L'agente ha chiesto al cliente nome, cognome, numero di polizza, vecchia e nuova password.",
+            "L'agente ha quindi aggiornato la vecchia password del cliente e ha chiesto la nuova password.",
+            "L'agente ha anche inviato al cliente un'e-mail con tutti i piani delle polizze attuali."
+          ],
+          "shortSummary": [
+            "Nuova SIM attivata, istruzioni per la sostituzione fornite"
+          ]
+        },
+        "outcome": {
+          "header": "Esito",
+          "content": [
+            "Il cliente ha chiamato per reimpostare la password del suo account online.",
+            "Il cliente desidera aggiungere un familiare all'account.",
+            "Il cliente desidera aggiornare l'abbonamento."
+          ],
+          "shortSummary": [
+            "Sostituzione SIM avvenuta con successo"
+          ]
+        },
+        "customerSentiment": {
+          "header": "Sentiment del Cliente",
+          "content": [
+            "Il cliente era soddisfatto dell'esito della conversazione."
+          ],
+          "shortSummary": [
+            "Soddisfatto"
+          ]
+        },
+        "paragraphFull": "Il cliente ha chiamato per reimpostare la password del suo account online. Il cliente desidera aggiungere un familiare all'account. Il cliente desidera aggiornare l'abbonamento.<br><br>L'agente ha chiesto al cliente nome, cognome, numero di polizza, vecchia e nuova password. L'agente ha quindi aggiornato la vecchia password del cliente e ha chiesto la nuova password. L'agente ha anche inviato al cliente un'e-mail con tutti i piani delle polizze attuali.<br><br>L'esito della conversazione è stato che la password del cliente è stata reimpostata con successo e l'agente ha inviato al cliente un'e-mail con tutti i piani delle polizze attuali.<br><br>Il cliente era soddisfatto dell'esito della conversazione.",
+        "paragraphShort": "Il cliente ha chiamato per reimpostare la password del suo account online. Il cliente desidera aggiornare l'abbonamento.<br><br>L'agente ha chiesto al cliente nome, cognome, numero di polizza, vecchia e nuova password. L'agente ha anche inviato al cliente un'e-mail con tutti i piani delle polizze attuali.<br><br>Il cliente era soddisfatto dell'esito della conversazione."
+      }
+    },
+    "testSummaryBuilder": {
+      "primaryDesc": "Carica Modello",
+      "secondaryDesc": "Caricare un modello per testare il costruttore di riepiloghi.",
+      "upload": "Carica",
+      "uploadTestTemplate": "Carica Modello di Test",
+      "downloadTestTemplate": "Scarica Modello di Test"
+    },
+    "advanceMode": {
+      "advancedMode": "Modalità Avanzata",
+      "advanceModeInfo": "Usa {'@'} o il menu icone per aggiungere azioni.",
+      "accessAdvancedFeaturesAndSettings": "Accedi a funzionalità e impostazioni avanzate",
+      "promptConfiguration": "Configurazione Prompt",
+      "promptConfigurationDescription": "Usa il menu icone per inserire azioni. È consentita una sola variabile Trascrizione, nel Prompt di Sistema o nel Prompt Utente.",
+      "parametersConfiguration": "Parametri",
+      "temperaturePrompt": "Temperatura",
+      "temperaturePromptTooltip": "Controlla la creatività; più alta = output più vario, più bassa = più preciso.",
+      "seedPrompt": "Seed",
+      "seedPromptTooltip": "Garantisce la riproducibilità delle risposte con lo stesso input.",
+      "toppPrompt": "Top-p",
+      "toppPromptTooltip": "Sceglie tra i token all'interno della massa di probabilità minima sopra p (campionamento nucleare).",
+      "topkPrompt": "Top-k",
+      "topkPromptTooltip": "Sceglie solo tra i k token più probabili.",
+      "maxTokensPrompt": "Token Massimi",
+      "maxTokensPromptTooltip": "Definisce la lunghezza massima dell'output; collegato alla Dimensione Riepilogo.",
+      "systemPrompt": "Prompt di Sistema",
+      "systemPromptTooltip": "Istruzioni principali che definiscono il comportamento generale e il ruolo del modello.",
+      "EnterSystemPromt": "Inserire il prompt di sistema",
+      "UserPrompt": "Prompt Utente",
+      "userPromptTooltip": "Richiesta o query principale dell'utente a cui risponde il modello.",
+      "EnterUserPromt": "Inserire il prompt utente",
+      "Guidelines": "Linee Guida",
+      "guidelinesPromptTooltip": "Regole aggiuntive per applicare formattazione, tono o stile nel riepilogo.",
+      "EnterGuidelinesPromt": "Inserire le linee guida",
+      "OneShotExample": "Esempio One-Shot",
+      "oneShotPromptTooltip": "Una coppia input-output di esempio per guidare la risposta del modello (opzionale).",
+      "EnterShotExample": "Inserire l'esempio one-shot"
+    },
+    "emptyList": {
+      "primaryDesc": "Nessun Modello di Riepilogo Trovato",
+      "secondaryDesc": "Fare clic su \"Aggiungi Nuovo Modello di Riepilogo\" per iniziare ad aggiungere nuovi modelli, e usare l'icona altro per \"Carica Modello\"."
+    },
+    "tooltip": {
+      "labelTooltip": "Deve essere unico; solo caratteri alfanumerici e '_'. Non sono consentiti spazi.",
+      "descriptionTooltip": "Solo per scopi di visualizzazione. Non fa parte delle istruzioni per il Modello.",
+      "summarySize": "Specificare il limite approssimativo di caratteri del riepilogo"
+    },
+    "common": {
+      "AddBtnLabel": "Aggiungi",
+      "deleteBtnLabel": "Elimina",
+      "cloneBtnLabel": "Clona",
+      "saveButton": "Salva",
+      "cancelButton": "Annulla",
+      "test": "Testa",
+      "resettoDefault": "Ripristina Predefinito",
+      "tableTitle": "Impostazioni Tabella",
+      "rowDensityText": "Densità Riga",
+      "largeRowDensity": "Grande",
+      "compactRowDensity": "Compatto"
+    },
+    "validation": {
+      "templateName": {
+        "required": "Il nome del riepilogo è obbligatorio",
+        "maxLength": "Il nome del riepilogo deve contenere al massimo 20 caratteri",
+        "noSpaces": "Il nome del riepilogo non può contenere spazi",
+        "invalidChars": "Il nome del riepilogo può contenere solo lettere, numeri e trattini bassi",
+        "notUnique": "Il nome del riepilogo deve essere univoco"
+      }
+    },
+    "publishModal": {
+      "title": "Pubblica",
+      "publishButton": "Pubblica",
+      "versionNotesLabel": "Note sulla versione",
+      "saveAsNewTemplateLabel": "Desideri salvare questo come nuovo modello?",
+      "templateNameLabel": "Nome modello",
+      "templateNamePlaceholder": "Aggiungi nome modello"
+    },
+    "tagEditor": {
+      "entities": "Entità",
+      "questions": "Domande",
+      "oneShotAnswers": "Risposte One Shot",
+      "targetLanguage": "Lingua di destinazione",
+      "transcript": "Trascrizione"
+    },
+    "notification": {
+      "savedSummarySuccessMsg": "Modello salvato con successo - `{summaryName}`",
+      "savedSummaryFailureMsg": "Salvataggio del modello non riuscito - `{summaryName}`",
+      "deletedSummarySuccessMsg": "Modello eliminato con successo - `{summaryName}`",
+      "deletedSummaryFailureMsg": "Eliminazione del modello non riuscita - `{summaryName}`",
+      "clonedSummarySuccessMsg": "Modello clonato con successo - `{summaryName}`",
+      "clonedSummaryFailureMsg": "Eliminazione del modello non riuscita - `{summaryName}`",
+      "publishedSummarySuccessMsg": "Modello pubblicato con successo - `{summaryName}`",
+      "publishedSummaryFailureMsg": "Pubblicazione del modello non riuscita - `{summaryName}`",
+      "editedSummarySuccessMsg": "Aggiornato con successo - `{summaryName}`",
+      "editedSummaryFailureMsg": "Aggiornamento non riuscito - `{summaryName}`",
+      "createdQuestionSuccessMsg": "Domanda creata con successo - `{QName}`",
+      "createdQuestionFailureMsg": "Creazione della domanda non riuscita - `{QName}`",
+      "updatedQuestionSuccessMsg": "Domanda aggiornata con successo - `{QName}`",
+      "updatedQuestionFailureMsg": "Aggiornamento della domanda non riuscito - `{QName}`",
+      "uploadInputFileSuccess": "Caricato con successo",
+      "uploadInputFileFail": "Caricamento non riuscito",
+      "allPromptFieldsAreMandatory": "Tutti i campi del prompt sono obbligatori",
+      "allPromptFieldsAreMandatoryDescription": "Compilare tutti i campi del prompt.",
+      "pleaseEnterValidNumber": "Inserire un numero valido"
+    }
+  }
+}
