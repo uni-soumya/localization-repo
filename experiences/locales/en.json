@@ -2,7 +2,7 @@
   "default": "Default",
   "experiences": {
     "header": {
-      "title": "AI Agents default",
+      "title": "AI Agents default Italian language",
       "createButton": "New AI Agent",
       "searchPlactholder": "Search by Agent Name"
     },
