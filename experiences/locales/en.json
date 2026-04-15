@@ -157,7 +157,7 @@
           "label": "Knowledge Base",
           "placeholder": "Select Knowledge Base"
         },
-        "sessionVariable":{
+        "sessionVariable": {
           "label": "Dynamic Session Variable",
           "placeholder": "Select Session Variable"
         }
@@ -167,7 +167,7 @@
     },
     "prePostHooks": {
       "title": "Pre and Post Call Hooks",
-      "titleTooltip": "Configure Pre-Call and Post-Call hooks to execute specific order and actions before and after calls. ",
+      "titleTooltip": "Configure Pre-Call and Post-Call hooks to execute specific order and actions before and after calls.",
       "llmContextError": "Pre-Call and Post-Call tool inputs and outputs can only use Session Variables (cannot use LLM context)",
       "preCallHook": {
         "label": "Pre-Call Hook",
@@ -325,7 +325,7 @@
       "phoneNumberPlaceholder": "Enter the phone number of telephony system",
       "department": "Department",
       "departmentPlaceholder": "Define functional group or task level required",
-      "defaultURL":"Default URL",
+      "defaultURL": "Default URL",
       "sessionVariableUrl": "Session State URL"
     },
     "callTermination": {
